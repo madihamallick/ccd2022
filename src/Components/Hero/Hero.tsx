@@ -9,6 +9,7 @@ import { getDoc, doc } from 'firebase/firestore'
 const Hero = () => {
   const [user, loading]: any = useAuthState(auth)
   const [applied, setApplied] = useState(false)
+  const [ticket, setTicket] = useState(false)
 
   const navigate = useNavigate()
 
@@ -20,7 +21,6 @@ const Hero = () => {
 
     async function DocumentID() {
       if (user) {
-        // let encodedEmail = base64_encode(user.email)
         const docRef = doc(db, 'register', user.uid)
         const docSnap = await getDoc(docRef)
         if (docSnap.exists()) {
@@ -33,8 +33,27 @@ const Hero = () => {
       }
     }
 
+    async function TicketID() {
+      if (applied) {
+        const docRef = doc(db, 'tickets', user.uid)
+        const docSnap = await getDoc(docRef)
+        if (docSnap.exists()) {
+          console.log('Ticket ID already exists!', docSnap.id)
+          setTicket(true)
+          // navigate('/ccd2022/dashboard')
+        } else {
+          console.log('No such document!')
+          // navigate('/ccd2022/rsvp')
+        }
+      }
+    }
+
     if (user) {
       DocumentID()
+    }
+
+    if (applied) {
+      TicketID()
     }
   }, [user])
 
@@ -58,9 +77,18 @@ const Hero = () => {
             <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
               {user ? (
                 applied ? (
-                  <button className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded">
-                    Under Review
-                  </button>
+                  ticket ? (
+                    <button
+                      className="bg-red-500 text-white uppercase font-semibold py-4 rounded"
+                      // onClick={''}
+                    >
+                      Download Tickets
+                    </button>
+                  ) : (
+                    <button className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded">
+                      Under Review
+                    </button>
+                  )
                 ) : (
                   <button
                     className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded"

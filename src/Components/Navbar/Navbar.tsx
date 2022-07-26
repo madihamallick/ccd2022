@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 // import logo from '../../Images/logo.png';
 import svglogo from '../../Images/logo.svg'
-import { auth, logout } from '../../services/UserAuth'
+import { auth, logout, signInWithGoogle } from '../../services/UserAuth'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { Link } from 'react-router-dom'
 
@@ -77,7 +77,12 @@ export default function Navbar() {
                   </button>
                 </Link>
               ) : (
-                ''
+                <button
+                  className="mt-1 py-1.5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
+                  onClick={signInWithGoogle}
+                >
+                  Login
+                </button>
               )}
             </div>
 
