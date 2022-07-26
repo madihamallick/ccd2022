@@ -38,8 +38,7 @@ const Hero = () => {
         const docRef = doc(db, 'tickets', user.uid)
         const docSnap = await getDoc(docRef)
         if (docSnap.exists()) {
-          // console.log('Accepted!', docSnap.data(), docSnap.id)
-          if (docSnap.data().accepted) {
+          if (docSnap.data().conference || docSnap.data().workshop) {
             setTicket(true)
           } else {
             setTicket(false)
