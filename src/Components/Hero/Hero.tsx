@@ -38,12 +38,14 @@ const Hero = () => {
         const docRef = doc(db, 'tickets', user.uid)
         const docSnap = await getDoc(docRef)
         if (docSnap.exists()) {
-          console.log('Ticket ID already exists!', docSnap.id)
-          setTicket(true)
-          // navigate('/ccd2022/dashboard')
+          // console.log('Accepted!', docSnap.data(), docSnap.id)
+          if (docSnap.data().accepted) {
+            setTicket(true)
+          } else {
+            setTicket(false)
+          }
         } else {
           console.log('No such document!')
-          // navigate('/ccd2022/rsvp')
         }
       }
     }
@@ -55,7 +57,7 @@ const Hero = () => {
     if (applied) {
       TicketID()
     }
-  }, [user])
+  }, [user, loading, applied])
 
   return (
     <>
@@ -80,13 +82,13 @@ const Hero = () => {
                   ticket ? (
                     <button
                       className="bg-red-500 text-white uppercase font-semibold py-4 rounded"
-                      // onClick={''}
+                      onClick={() => navigate('/ccd2022/dashboard/tickets')}
                     >
-                      Download Tickets
+                      View Tickets
                     </button>
                   ) : (
-                    <button className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded">
-                      Under Review
+                    <button className="bg-black text-white uppercase font-semibold py-4 rounded">
+                      Not Accepted
                     </button>
                   )
                 ) : (
