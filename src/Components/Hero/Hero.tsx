@@ -86,8 +86,8 @@ const Hero = () => {
                       View Tickets
                     </button>
                   ) : (
-                    <button className="bg-black text-white uppercase font-semibold py-4 rounded">
-                      Not Accepted
+                    <button className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded">
+                      Under Review
                     </button>
                   )
                 ) : (
