@@ -81,7 +81,7 @@ const Hero = () => {
                   ticket ? (
                     <button
                       className="bg-red-500 text-white uppercase font-semibold py-4 rounded"
-                      onClick={() => navigate('/ccd2022/dashboard/tickets')}
+                      onClick={() => navigate('/ccd2022/tickets')}
                     >
                       View Tickets
                     </button>

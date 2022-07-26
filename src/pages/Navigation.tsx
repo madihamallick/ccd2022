@@ -25,7 +25,7 @@ export default function Navigation() {
           element={<PrivateRoute component={Dashboard} />}
         />
         <Route
-          path="/ccd2022/dashboard/tickets"
+          path="/ccd2022/tickets"
           element={<PrivateRoute component={Tickets} />}
         />
       </Routes>
