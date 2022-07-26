@@ -48,11 +48,10 @@ const Tickets = () => {
               res.items.forEach((itemRef) => {
                 getDownloadURL(ref(storage, itemRef.fullPath))
                   .then((url) => {
-                    const participant = user.displayName.split(' ')[0]
-                    if (docSnap.data().conference) {
+                    if (itemRef.name.endsWith("conference_pass.png")) {
                       setConferencePassTicket(url)
                     }
-                    if (docSnap.data().workshop) {
+                    else if (itemRef.name.endsWith("workshop_pass.png")) {
                       setworkshopPassTicket(url)
                     }
                   })
