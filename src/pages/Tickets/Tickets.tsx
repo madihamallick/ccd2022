@@ -107,7 +107,7 @@ const Tickets = () => {
                   <a href={workshopPassTicket} target="_blank" rel="noopener noreferrer"
                     className="px-6 py-2 text-center text-white no-underline bg-blue-500 rounded hover:bg-blue-600">Download</a>
                   <br />
-                  <span>Share the news with your friends, tag us with @GDGCloudKol (<a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
+                  <span>Share the news with your friends, use hashtags #CCDKol and #CloudCommunityDays, tag us with @GDGCloudKol (<a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
                     <a href="https://facebook.com/gdgcloudkol">
                       Facebook
                     </a>
@@ -137,7 +137,7 @@ const Tickets = () => {
                     <a href={conferencePassTicket} target="_blank" rel="noopener noreferrer"
                       className="px-6 py-2 text-center text-white no-underline bg-blue-500 rounded hover:bg-blue-600">Download</a>
                     <br />
-                    <span>Share the news with your friends, tag us with @GDGCloudKol (<a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
+                    <span>Share the news with your friends, use hashtags #CCDKol and #CloudCommunityDays, tag us with @GDGCloudKol (<a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
                       <a href="https://facebook.com/gdgcloudkol">
                         Facebook
                       </a>
