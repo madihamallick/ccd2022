@@ -26,14 +26,14 @@ export default function Navbar() {
     <>
       <nav
         className={`${
-          scrolled ? 'shadow-lg backdrop-blur-lg' : ''
-        } z-[100] fixed w-full`}
+          scrolled ? 'shadow-sm border-b-[1px] border-g-gray-3' : ''
+        }  bg-white z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
           <div className="flex justify-between">
             <div className="flex space-x-7">
               <div>
-                <a href="#!" className="flex items-center px-2 my-1.5">
+                <a href="#!" className="flex items-center">
                   <img src={svglogo} alt="Logo" className="w-80 mr-2" />
                 </a>
               </div>
@@ -43,26 +43,33 @@ export default function Navbar() {
               <div className="hidden md:flex items-center space-x-9">
                 <a
                   href="/ccd2022"
-                  className="py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg"
-                  style={{ textDecoration: 'none' }}
+                  className="py-2 px-2 text-g-gray-8 border-b-4 border-g-gray-8 font-medium text-base"
+                  style={{
+                    textDecoration: 'none',
+                    borderBottomLeftRadius: '4px',
+                    borderBottomRightRadius: '4px'
+                  }}
                 >
                   Home
                 </a>
                 {/* <a
                   href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300"
+                  className="py-1 px-2 text-g-gray-6   text-base"
+                  style={{ textDecoration: 'none' }}
                 >
                   Speakers
                 </a>
                 <a
                   href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleYellow transition duration-300"
+                  className="py-1 px-2 text-g-gray-6    text-base"
+                  style={{ textDecoration: 'none' }}
                 >
                   Timeline
                 </a>
                 <a
                   href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleRed transition duration-300"
+                  className="py-1 px-2 text-g-gray-6    text-base"
+                  style={{ textDecoration: 'none' }}
                 >
                   Sponsors
                 </a> */}

@@ -60,39 +60,41 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-3/4 items-center flex flex-col lg:flex-row my-0 mx-auto gap-12 pt-20 lg:py-48">
+      <div className="w-full max-w-7xl items-center flex flex-col lg:flex-row my-0 mx-auto gap-12 pt-20 lg:pt-28 lg:pb-[62px] px-4">
         <div className="w-full lg:w-1/2">
           <div>
-            <p className="text-5xl font-semibold text-blue-500">
+            <p className="text-4xl font-normal text-g-blue-3 mb-6">
               Cloud Community Days 2022
             </p>
-            <p className="text-xl py-4">
+            <p className="text-base text-g-gray-6 mb-0">
               A community organized cloud conference with industry experts presenting
-              on exciting topics!
+              on exciting topics! Cloud Community Day is powered by a shared belief
+              that when developers come together to exchange ideas, amazing things
+              can happen.
             </p>
-            <p className="text-xl py-4">Organized By</p>
+            <p className="text-base pt-4 mb-0 text-g-gray-8">Organized By :</p>
             <img className="w-2/4" src={logo} alt="Logo" />
-            <p className="text-xl py-4 text-lightGrey">
+            <p className="text-base mb-4 text-g-gray-8">
               Dates: 27-28<sup className="mr-0.5">th</sup>August
             </p>
-            <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-x-8 gap-y-4">
+            <div className="lg:w-fit md:w-full grid grid-cols-1 lg:grid-cols-2 gap-x-4 gap-y-4">
               {user ? (
                 applied ? (
                   ticket ? (
                     <button
-                      className="bg-red-500 text-white uppercase font-semibold py-4 rounded"
+                      className="transition ease-in-out bg-red-500 duration-300 text-white h-fit w-fit text-base py-2 px-4 rounded"
                       onClick={() => navigate('/ccd2022/tickets')}
                     >
                       View Tickets
                     </button>
                   ) : (
-                    <button className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded">
+                    <button className="transition ease-in-out bg-yellow-500 duration-300 text-white h-fit w-fit text-base py-2 px-4 rounded">
                       Under Review
                     </button>
                   )
                 ) : (
                   <button
-                    className="bg-yellow-500 text-white uppercase font-semibold py-4 rounded"
+                    className="transition ease-in-out bg-yellow-500 duration-300 text-white h-fit w-fit text-base py-2 px-4 rounded"
                     onClick={() => navigate('/ccd2022/rsvp')}
                   >
                     Apply for Ticket
@@ -100,7 +102,7 @@ const Hero = () => {
                 )
               ) : (
                 <button
-                  className="transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 text-white uppercase font-semibold py-4 rounded"
+                  className="transition ease-in-out bg-blue-500 hover:bg-blue-600 duration-300 text-white h-fit w-fit text-base py-2 px-4 rounded"
                   onClick={signInWithGoogle}
                 >
                   Reserve Your Seat
@@ -108,12 +110,12 @@ const Hero = () => {
               )}
 
               <a
-                className="transition ease-in-out delay-150 bg-green-600 hover:-translate-y-1 hover:scale-110 hover:bg-emerald-600 duration-300 text-center rounded"
+                className="transition ease-in-out  bg-green-600   hover:bg-emerald-600 duration-300 text-center w-fit rounded"
                 href="https://sessionize.com/cloud-community-days"
                 target={'_blank'}
                 rel="noreferrer"
               >
-                <button className="text-white uppercase font-semibold py-4 rounded">
+                <button className="text-white  h-fit w-fit text-base py-2 px-4 rounded">
                   Become a Speaker
                 </button>
               </a>
