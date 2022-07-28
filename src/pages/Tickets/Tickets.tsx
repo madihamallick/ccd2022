@@ -95,11 +95,11 @@ const Tickets = () => {
           <>
 
             {workshopPassTicket ?
-              <div className="m-4 flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+              <div className="m-4 flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200">
                 <img className="object-cover w-full max-h-screen border rounded-l-lg md:h-auto md:w-72 md:rounded-none md:rounded-l-lg" src={workshopPassTicket} alt="Workshop Pass" />
                 <div className="flex flex-col justify-between p-4 leading-normal">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Workshop Pass</h5>
-                  <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Workshop Pass</h5>
+                  <p className="mb-3 font-normal text-gray-700">
                     &#128197; 27 August, 2022 <br />
                     &#128205; Kolkata
                   </p>
@@ -125,11 +125,11 @@ const Tickets = () => {
             }
             {
               conferencePassTicket ?
-                <div className="flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div className="flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200">
                   <img className="object-cover w-full max-h-screen border rounded-l-lg md:h-auto md:w-72 md:rounded-none md:rounded-l-lg" src={conferencePassTicket} alt="Conference Pass" />
                   <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Conference Pass</h5>
-                    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Conference Pass</h5>
+                    <p className="mb-3 font-normal text-gray-700">
                       &#128197; 28 August, 2022 <br />
                       &#128205; Taal Kutir Convention Center by Taj, Kolkata
                     </p>
