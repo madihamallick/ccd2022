@@ -86,7 +86,15 @@ export default function Navbar() {
               )}
             </div>
 
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden flex items-center space-x-2">
+              {user ? null : (
+                <button
+                  className="mt-1 py-1.5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
+                  onClick={signInWithGoogle}
+                >
+                  Login
+                </button>
+              )}
               <button
                 className="outline-none mobile-menu-button"
                 onClick={toggleNav}
