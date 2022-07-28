@@ -60,7 +60,10 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-3/4 items-center flex flex-col lg:flex-row my-0 mx-auto gap-12 pt-20 lg:py-48">
+      <div
+        className="w-3/4 items-center flex flex-col lg:flex-row my-0 mx-auto gap-12 pt-20 lg:py-48"
+        id="hero"
+      >
         <div className="w-full lg:w-1/2">
           <div>
             <p className="text-5xl font-semibold text-blue-500">
