@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <nav
         className={`${
-          scrolled ? 'shadow-lg backdrop-blur-lg' : 'shadow-xl '
+          scrolled ? 'shadow-lg backdrop-blur-lg' : ''
         } z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
