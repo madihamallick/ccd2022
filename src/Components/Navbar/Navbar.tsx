@@ -26,14 +26,14 @@ export default function Navbar() {
     <>
       <nav
         className={`${
-          scrolled ? 'shadow-sm border-b-[1px] border-g-gray-3' : ''
-        }  bg-white z-[100] fixed w-full`}
+          scrolled ? 'shadow-lg backdrop-blur-lg' : ''
+        } z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
           <div className="flex justify-between">
             <div className="flex space-x-7">
               <div>
-                <a href="#!" className="flex items-center">
+                <a href="#!" className="flex items-center px-2 my-1.5">
                   <img src={svglogo} alt="Logo" className="w-80 mr-2" />
                 </a>
               </div>
@@ -43,33 +43,26 @@ export default function Navbar() {
               <div className="hidden md:flex items-center space-x-9">
                 <a
                   href="/ccd2022"
-                  className="py-2 px-2 text-g-gray-8 border-b-4 border-g-gray-8 font-medium text-base"
-                  style={{
-                    textDecoration: 'none',
-                    borderBottomLeftRadius: '4px',
-                    borderBottomRightRadius: '4px'
-                  }}
+                  className="py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg"
+                  style={{ textDecoration: 'none' }}
                 >
                   Home
                 </a>
                 {/* <a
                   href="#!"
-                  className="py-1 px-2 text-g-gray-6   text-base"
-                  style={{ textDecoration: 'none' }}
+                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300"
                 >
                   Speakers
                 </a>
                 <a
                   href="#!"
-                  className="py-1 px-2 text-g-gray-6    text-base"
-                  style={{ textDecoration: 'none' }}
+                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleYellow transition duration-300"
                 >
                   Timeline
                 </a>
                 <a
                   href="#!"
-                  className="py-1 px-2 text-g-gray-6    text-base"
-                  style={{ textDecoration: 'none' }}
+                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleRed transition duration-300"
                 >
                   Sponsors
                 </a> */}
@@ -93,7 +86,15 @@ export default function Navbar() {
               )}
             </div>
 
-            <div className="md:hidden flex items-center">
+            <div className="md:hidden flex items-center space-x-2">
+              {user ? null : (
+                <button
+                  className="mt-1 py-1.5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
+                  onClick={signInWithGoogle}
+                >
+                  Login
+                </button>
+              )}
               <button
                 className="outline-none mobile-menu-button"
                 onClick={toggleNav}
