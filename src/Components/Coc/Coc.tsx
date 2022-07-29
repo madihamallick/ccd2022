@@ -1,52 +1,67 @@
-import Title from '../Title/Title'
-import COC from '../../Images/COC.gif'
-
 const Coc = () => {
   return (
     <>
-      <Title heading="Code Of Conduct" />
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 mt-2 place-items-center px-8">
-        <div className="w-full lg:w-3/4 my-0 mx-auto sm:text-left">
-          <h3 className="text-3xl py-5 font-bold">Anti-Harassment Policy</h3>
-          <h3 className="text-regalBlue text-s font-bold">
-            Why do we have an official Anti-Harassment policy for Google Developer
-            Group?
-          </h3>
-          <ul className="list-disc ml-6">
-            <li>
-              It sets expectations for behavior at the event. Simply having an
-              anti-harassment policy can prevent harassment.
-            </li>
-            <li>
-              It encourages people to attend who have had bad experiences at other
-              events
-            </li>
-            <li>
-              It gives event staff/volunteers instructions on how to handle
-              harassment quickly, with minimum amount of disruption for the event.
-            </li>
-          </ul>
-          <h3 className="text-regalBlue text-s font-bold mt-3">
-            Harassment includes (but is not limited to):
-          </h3>
-          <ul className="list-disc ml-6">
-            <li>
-              Offensive verbal comments related to gender, sexual orientation,
-              disability, gender identity, age, race, religion.
-            </li>
-            <li>The use or display of sexual images in public spaces.</li>
-            <li>Deliberate intimidation.</li>
-            <li>
-              Deliberate intimidation Stalking Harassing photography or recording
-              Sustained disruption of talks or other events Inappropriate physical
-              contact Unwelcome sexual attention
-            </li>
-            <li>Harassing photography or recording</li>
-            <li>Stalking</li>
-          </ul>
-        </div>
-        <div className="shadow-2xl shadow-imageBlue bg-transparent my-10 ">
-          <img src={COC} alt="COC" width={600} className=" rounded-xl" />
+      <div className="flex items-center">
+        <div className="md:w-full max-w-7xl mx-auto my-12">
+          <div className="px-4">
+            <div className="text-3xl font-normal text-g-gray-8">
+              Google Event Code of Conduct
+            </div>
+            <div className="text-base text-g-gray-7 lg:w-3/4 mt-4">
+              Google is dedicated to providing a harassment-free and inclusive event
+              experience for everyone regardless of gender identity and expression,
+              sexual orientation, disabilities, neurodiversity, physical appearance,
+              body size, ethnicity, nationality, race, age, religion, or other
+              protected category. We do not tolerate harassment of event participants
+              in any form. Google takes violations of our policy seriously and will
+              respond appropriately.
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row gap-4 justify-around bg-g-gray-1 lg:rounded-2xl p-4 mt-12">
+            <div className="lg:w-1/3 md:w-full">
+              <div className="text-xl text-g-gray-8 mb-4">
+                Be excellent to each other
+              </div>
+              <div className="text-base text-g-gray-7">
+                We want the event to be an excellent experience for everyone
+                regardless of gender identity and expression, sexual orientation,
+                disabilities, neurodiversity, physical appearance, body size,
+                ethnicity, nationality, race, age, religion, or other protected
+                category. Treat everyone with respect. Participate while
+                acknowledging that everyone deserves to be here -- and each of us has
+                the right to enjoy our experience without fear of harassment,
+                discrimination, or condescension, whether blatant or via
+                micro-aggressions. Jokes shouldn’t demean others. Consider what you
+                are saying and how it would feel if it were said to or about you.
+              </div>
+            </div>
+            <div className="lg:w-1/3 md:w-full">
+              <div className="text-xl text-g-gray-8 mb-4">
+                Speak up if you see or hear something.
+              </div>
+              <div className="text-base text-g-gray-7">
+                Harassment is not tolerated, and you are empowered to politely engage
+                when you or others are disrespected. The person making you feel
+                uncomfortable may not be aware of what they are doing, and politely
+                bringing their behavior to their attention is encouraged. If a
+                participant engages in harassing or uncomfortable behavior, the event
+                organizers may take any action they deem appropriate, including
+                warning or expelling the offender from the event with no refund. If
+                you are being harassed or feel uncomfortable, notice that someone
+                else is being harassed, or have any other concerns, please contact a
+                member of the event staff immediately.
+              </div>
+            </div>
+            <div className="lg:w-1/3 md:w-full">
+              <div className="text-xl text-g-gray-8 mb-4">
+                Practice saying "Yes and" to each other.
+              </div>
+              <div className="text-base text-g-gray-7">
+                It’s a theatre improv technique to build on each other’s ideas. We
+                all benefit when we create together.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

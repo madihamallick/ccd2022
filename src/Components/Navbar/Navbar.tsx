@@ -26,7 +26,7 @@ export default function Navbar() {
     <>
       <nav
         className={`${
-          scrolled ? 'shadow-lg backdrop-blur-lg' : ''
+          scrolled ? 'shadow-lg backdrop-blur-lg' : 'shadow-xl '
         } z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
@@ -48,12 +48,14 @@ export default function Navbar() {
                 >
                   Home
                 </a>
-                {/* <a
-                  href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300"
+                <a
+                  href="#speakers-grid"
+                  className="py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg"
+                  style={{ textDecoration: 'none' }}
                 >
                   Speakers
                 </a>
+                {/*
                 <a
                   href="#!"
                   className="py-4 px-2 text-gray-500 font-semibold hover:text-googleYellow transition duration-300"

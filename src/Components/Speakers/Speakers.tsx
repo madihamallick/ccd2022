@@ -4,6 +4,7 @@ import speakersData from './speakersData.json'
 
 const Speakers = () => {
   const imageBorderStyle = {
+    // border: '1px solid #eaeaea',
     backgroundImage: `url("https://www.linkpicture.com/q/favicon-1.svg")`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
@@ -13,7 +14,10 @@ const Speakers = () => {
   return (
     <>
       <Title heading="Our Amazing Speakers" />
-      <div className="grid sm:grid-cols-1 md:grid-cols-3 grid-flow-row place-items-center p-5">
+      <div
+        className="grid sm:grid-cols-1 gap-4 md:grid-cols-3 grid-flow-row place-items-center max-w-7xl mx-auto "
+        id="speakers-grid"
+      >
         {speakersData.map((speaker, id) => (
           <div
             key={id}
