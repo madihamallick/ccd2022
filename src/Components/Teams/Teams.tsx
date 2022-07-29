@@ -1,6 +1,6 @@
 import Title from '../Title/Title'
 import teamData from './teamData.json'
-import Socials from '../Socials/Socials'
+import { Socials } from '../Socials/Socials'
 
 const Teams = () => {
   const imageBorderStyle = {
