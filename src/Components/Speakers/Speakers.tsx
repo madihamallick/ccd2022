@@ -17,20 +17,22 @@ const Speakers = () => {
         {speakersData.map((speaker, id) => (
           <div
             key={id}
-            className="flex md:w-3/5 sm:w-100 flex-col rounded-2xl items-center mb-4"
+            className="flex md:w-3/5 sm:w-100 flex-col rounded-2xl items-center border border-g-gray-8 p-4"
           >
-            <div style={imageBorderStyle}>
-              <img
-                src={speaker.image}
-                alt="profile"
-                className="rounded-full m-3 w-48 h-48 "
-              />
+            <img
+              style={{
+                borderStyle: 'solid',
+                borderWidth: '4px',
+                borderColor: '#3d82f8 #e5443f #f9b923 #2ea94f'
+              }}
+              className="inline-block h-36 w-36 rounded-full ring-2 ring-white"
+              src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              alt=""
+            />
+            <div className="text-lg font-light mt-4">Ankit Sharma</div>
+            <div className="text-sm font-light mt-2 text-center">
+              Machine Learning Engineer at Carted
             </div>
-            <h3 className="text-xl font-bold">{speaker.name}</h3>
-            <h3 className="text-xl text-lightGrey font-bold ">{speaker.position}</h3>
-            <p className="text-sm text-lightGrey w-56 text-center py-4">
-              {speaker.description}
-            </p>
             <Socials
               twitterLink={speaker.twitterLink}
               githubLink={speaker.githubLink}

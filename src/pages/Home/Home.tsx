@@ -8,6 +8,7 @@ import Sponsors from '../../Components/Sponsors/Sponsors'
 import About from '../../Components/About/About'
 import Coc from '../../Components/Coc/Coc'
 import Partners from '../../Components/Partners/Partners'
+import Speakers from '../../Components/Speakers/Speakers'
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
-      {/* <Speakers /> */}
+      <Speakers />
       {/* <Team /> */}
       <Coc />
       <FAQ />
