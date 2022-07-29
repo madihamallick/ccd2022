@@ -93,68 +93,86 @@ const Tickets = () => {
       <div className="flex flex-col lg:flex-row my-0 lg:justify-center items-center ">
         {conferencePassTicket || workshopPassTicket ? (
           <>
-
-            {workshopPassTicket ?
+            {workshopPassTicket ? (
               <div className="m-4 flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200">
-                <img className="object-cover w-full max-h-screen border rounded-l-lg md:h-auto md:w-72 md:rounded-none md:rounded-l-lg" src={workshopPassTicket} alt="Workshop Pass" />
+                <img
+                  className="object-cover w-full max-h-screen border rounded-l-lg md:h-auto md:w-72 md:rounded-none md:rounded-l-lg"
+                  src={workshopPassTicket}
+                  alt="Workshop Pass"
+                />
                 <div className="flex flex-col justify-between p-4 leading-normal">
-                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Workshop Pass</h5>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    Workshop Pass
+                  </h5>
                   <p className="mb-3 font-normal text-gray-700">
                     &#128197; 27 August, 2022 <br />
                     &#128205; Kolkata
                   </p>
-                  <a href={workshopPassTicket} target="_blank" rel="noopener noreferrer"
-                    className="px-6 py-2 text-center text-white no-underline bg-blue-500 rounded hover:bg-blue-600">Download</a>
+                  <a
+                    href={workshopPassTicket}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 text-center text-white no-underline bg-blue-500 rounded hover:bg-blue-600"
+                  >
+                    Download
+                  </a>
                   <br />
-                  <span>Share the news with your friends, use hashtags #CCDKol and #CloudCommunityDays, tag us with @GDGCloudKol (<a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
-                    <a href="https://facebook.com/gdgcloudkol">
-                      Facebook
-                    </a>
-                    ,{' '}
-                    <a href="https://instagram.com/gdgcloudkol">
-                      Instagram
-                    </a>{' '}
-                    or{' '}
+                  <span>
+                    Share the news with your friends, use hashtags #CCDKol and
+                    #CloudCommunityDays, tag us with @GDGCloudKol (
+                    <a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
+                    <a href="https://facebook.com/gdgcloudkol">Facebook</a>,{' '}
+                    <a href="https://instagram.com/gdgcloudkol">Instagram</a> or{' '}
                     <a href="https://www.linkedin.com/company/gdgcloudkol/">
                       LinkedIn
-                    </a>) and stand a chance to win exclusive goodies! 🎉
+                    </a>
+                    ) and stand a chance to win exclusive goodies! 🎉
                   </span>
                 </div>
               </div>
-              : <></>
-            }
-            {
-              conferencePassTicket ?
-                <div className="flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200">
-                  <img className="object-cover w-full max-h-screen border rounded-l-lg md:h-auto md:w-72 md:rounded-none md:rounded-l-lg" src={conferencePassTicket} alt="Conference Pass" />
-                  <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Conference Pass</h5>
-                    <p className="mb-3 font-normal text-gray-700">
-                      &#128197; 28 August, 2022 <br />
-                      &#128205; Taal Kutir Convention Center by Taj, Kolkata
-                    </p>
-                    <a href={conferencePassTicket} target="_blank" rel="noopener noreferrer"
-                      className="px-6 py-2 text-center text-white no-underline bg-blue-500 rounded hover:bg-blue-600">Download</a>
-                    <br />
-                    <span>Share the news with your friends, use hashtags #CCDKol and #CloudCommunityDays, tag us with @GDGCloudKol (<a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
-                      <a href="https://facebook.com/gdgcloudkol">
-                        Facebook
-                      </a>
-                      ,{' '}
-                      <a href="https://instagram.com/gdgcloudkol">
-                        Instagram
-                      </a>{' '}
-                      or{' '}
-                      <a href="https://www.linkedin.com/company/gdgcloudkol/">
-                        LinkedIn
-                      </a>) and stand a chance to win exclusive goodies! 🎉
-                    </span>
-                  </div>
+            ) : (
+              <></>
+            )}
+            {conferencePassTicket ? (
+              <div className="flex flex-col items-center bg-gray-100 rounded-lg border shadow-md md:flex-row max-w-sm md:max-w-xl hover:bg-gray-200">
+                <img
+                  className="object-cover w-full max-h-screen border rounded-l-lg md:h-auto md:w-72 md:rounded-none md:rounded-l-lg"
+                  src={conferencePassTicket}
+                  alt="Conference Pass"
+                />
+                <div className="flex flex-col justify-between p-4 leading-normal">
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+                    Conference Pass
+                  </h5>
+                  <p className="mb-3 font-normal text-gray-700">
+                    &#128197; 28 August, 2022 <br />
+                    &#128205; Taal Kutir Convention Center by Taj, Kolkata
+                  </p>
+                  <a
+                    href={conferencePassTicket}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 text-center text-white no-underline bg-blue-500 rounded hover:bg-blue-600"
+                  >
+                    Download
+                  </a>
+                  <br />
+                  <span>
+                    Share the news with your friends, use hashtags #CCDKol and
+                    #CloudCommunityDays, tag us with @GDGCloudKol (
+                    <a href="https://twitter.com/gdgcloudkol">Twitter</a>,{' '}
+                    <a href="https://facebook.com/gdgcloudkol">Facebook</a>,{' '}
+                    <a href="https://instagram.com/gdgcloudkol">Instagram</a> or{' '}
+                    <a href="https://www.linkedin.com/company/gdgcloudkol/">
+                      LinkedIn
+                    </a>
+                    ) and stand a chance to win exclusive goodies! 🎉
+                  </span>
                 </div>
-
-                : <></>
-            }
-
+              </div>
+            ) : (
+              <></>
+            )}
           </>
         ) : (
           <div className="w-full my-0 mx-auto py-48">
@@ -172,13 +190,12 @@ const Tickets = () => {
       <br />
       <br />
       <div className="text-center">
-        <button className="btn btn-primary my-4" onClick={() => navigate('/')}>
+        <a className="btn btn-primary my-4" href="/ccd2022">
           Go Home
-        </button>
+        </a>
       </div>
       <br />
       <br />
-
     </>
   )
 }
