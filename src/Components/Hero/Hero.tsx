@@ -60,6 +60,7 @@ const Hero = () => {
 
   return (
     <>
+
       <div className="w-full max-w-7xl items-center flex flex-col lg:flex-row my-0 mx-auto gap-12 pt-20 lg:pt-28 lg:pb-[62px] px-4">
         <div className="w-full lg:w-1/2">
           <div>
