@@ -1,19 +1,31 @@
+import { Underline } from '../../Shared/Underline/Underline'
+
 const About = () => {
   return (
-    <div className="mt-8">
-      <div className="grid sm:grid-cols-1 md:grid-cols-2  place-items-center bg-lightBlue bg-opacity-50">
-        <div className="w-full lg:w-3/4 my-0 mx-auto pl-8 md:pl-20">
-          <h3 className="text-gray-800 text-3xl py-5">Hello, CCD’22</h3>
-          <p className="text-gray-600 text-xl">
-            GDG Cloud Kolkata is bringing to you the largest Google Cloud developer
-            event in Eastern India. Cloud Community Days Kolkata is the flagship
-            event of GDG Cloud Kolkata, held annually, recollecting the best of the
-            year and setting the stone for the upcoming year. Join us as we bring the
-            best of speakers and help you to put your career on a Runway to Google
-            Cloud.
+    <div className="">
+      <div className="flex items-center bg-g-blue-3">
+        <div className=" md:w-full max-w-7xl  my-0 mx-auto py-12 px-4">
+          <h3 className="text-gray-800 text-3xl mb-4">
+            <Underline color={'white'}> Hello, CCD’22</Underline>
+          </h3>
+          <p className=" lg:w-3/4 text-white text-base mb-4">
+            We’re bringing you an opportunity to learn about Cloud Technology and
+            Google Cloud Certifications from the industry experts at the Cloud
+            Community Day India 2021. Our experts will tell you how Google Cloud
+            Platform and Google Cloud Certifications can help you in accelerating
+            your career by boosting your knowledge. During this 2 days event, you’ll
+            also stand a chance to win exciting prizes and heavy discounts coupons on
+            Google Cloud Certifications.
           </p>
+          <a
+            className=" bg-transparent border-2 text-white  h-fit w-fit text-base py-2 px-4 rounded text-center no-underline"
+            href="https://sessionize.com/cloud-community-days"
+            target={'_blank'}
+            rel="noreferrer"
+          >
+            Learn More
+          </a>
         </div>
-        <img src="https://www.linkpicture.com/q/about_3.png" alt="about" />
       </div>
     </div>
   )
