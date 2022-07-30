@@ -43,7 +43,7 @@ export default function Navbar() {
             <div className="hidden md:flex items-center space-x-9">
               <div className="hidden md:flex items-center space-x-9">
                 <a
-                  href="/ccd2022"
+                  href="#home-grid"
                   className= {active==="Home" ? "py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg" : "py-3 px-2 text-googleBlue font-semibold text-lg"}
                   style={{ textDecoration: 'none' }}
                   onClick={()=>setActive("Home")}
@@ -125,7 +125,7 @@ export default function Navbar() {
           <ul className="bg-white border border-b-2 border-gray-200">
             <li className="active">
               <a
-                href="/ccd2022"
+                href="#home-grid"
                 className="block text-sm px-2 py-4 text-black font-semibold"
               >
                 Home
