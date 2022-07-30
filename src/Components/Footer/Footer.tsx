@@ -1,5 +1,3 @@
-import svglogo from '../../Images/logo.svg'
-
 const Footer = () => {
   return (
     <div>
@@ -12,11 +10,13 @@ const Footer = () => {
       >
         <div className="max-w-7xl mx-auto text-center md:text-left ">
           <div
-            className="flex flex-row justify-center py-4 md:justify-start mb-4"
+            className="flex items-center flex-row justify-center py-4 md:justify-start mb-4"
             style={{
               borderBottom: '1px solid #E6E6E6'
             }}
           >
+            <div className="text-sm text-g-gray-7 mr-4">FOLLOW US</div>
+
             <a
               href="https://facebook.com/gdgcloudkol"
               className="mr-6 text-gray-600"
