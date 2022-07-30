@@ -21,7 +21,7 @@ const FAQ = () => {
         <div className="text-base text-g-gray-7">
           Find them here. <br />
           <div className="mt-2">
-            For any queries related to sponsership, please reach out to us at{' '}
+            For any queries related to sponsorship, please reach out to us at{' '}
             <a href="mailto:partners@gdgcloud.kolkata.dev">
               partners@gdgcloud.kolkata.dev
             </a>
