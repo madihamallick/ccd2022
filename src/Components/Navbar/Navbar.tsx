@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [active, setActive] =useState("Home")
   const [user] = useAuthState(auth)
 
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function Navbar() {
     <>
       <nav
         className={`${
-          scrolled ? 'shadow-lg backdrop-blur-lg' : ''
+          scrolled ? 'shadow-lg bg-white/90' : ''
         } z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
@@ -42,18 +43,22 @@ export default function Navbar() {
             <div className="hidden md:flex items-center space-x-9">
               <div className="hidden md:flex items-center space-x-9">
                 <a
-                  href="/ccd2022"
-                  className="py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg"
+                  href="#home-grid"
+                  className= {active==="Home" ? "py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg" : "py-3 px-2 text-googleBlue font-semibold text-lg"}
                   style={{ textDecoration: 'none' }}
+                  onClick={()=>setActive("Home")}
                 >
                   Home
                 </a>
-                {/* <a
-                  href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300"
+                <a
+                  href="#speakers-grid"
+                  className={active==="Speakers" ? "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg" : "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg"}
+                  style={{ textDecoration: 'none' }}
+                  onClick={()=>setActive("Speakers")}
                 >
                   Speakers
                 </a>
+                {/*
                 <a
                   href="#!"
                   className="py-4 px-2 text-gray-500 font-semibold hover:text-googleYellow transition duration-300"
@@ -116,20 +121,28 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={`${isOpen === false ? 'hidden' : ''}`}>
+        <div className={`${isOpen === false ? 'hidden' : ''}`} >
           <ul className="bg-white border border-b-2 border-gray-200">
             <li className="active">
               <a
-                href="/ccd2022"
+                href="#home-grid"
                 className="block text-sm px-2 py-4 text-black font-semibold"
+                onClick={() => setIsOpen(false)} 
               >
                 Home
+              </a>
+              <a
+                href="#speakers-grid"
+                className="block text-sm px-2 py-4 text-black font-semibold"
+                onClick={() => setIsOpen(false)} 
+              >
+                Speakers
               </a>
             </li>
             {user ? (
               <li onClick={logout}>
                 <Link to="/ccd2022">
-                  <p className="block text-sm px-2 py-4 text-black font-semibold">
+                  <p className="block text-sm px-2 py-4 text-black font-semibold" onClick={() => setIsOpen(false)}>
                     Log Out
                   </p>
                 </Link>
