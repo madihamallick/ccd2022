@@ -19,7 +19,16 @@ const Speakers = () => {
 
   return (
     <>
-      <Title heading="Our Amazing Speakers" />
+      <div className="flex justify-center items-center flex-col px-5 pt-5">
+        <div className="text-2xl lg:text-3xl font-normal text-g-gray-8">
+          Our Amazing Speakers
+        </div>
+        <div className="text-base max-w-2xl w-fit text-center font-light text-g-gray-5 mt-2">
+          Hear from the Professionals who are building the future of cloud. Our
+          speakers are influential folks & allies who have been associated with
+          communities within their organisations, cities, country and beyond.
+        </div>
+      </div>
       <div
         className="grid 
         sm:grid-cols-1 md:grid-cols-3 grid-flow-row place-items-center p-5 lg:grid-cols-4  gap-4 max-w-7xl mx-auto "
