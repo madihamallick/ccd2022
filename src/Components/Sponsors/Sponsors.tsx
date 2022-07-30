@@ -5,7 +5,7 @@ const Sponsors = () => {
         Partners
       </div>
       <div className="flex justify-center md:justify-start text-2xl lg:text-xl font-light text-g-blue-3">
-        Sponsers
+        Sponsors
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-x-20 md:space-y-0 justify-between grid-flow-row place-items-center pt-2 w-3/4 mx-handler">
         <svg
