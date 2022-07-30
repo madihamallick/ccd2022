@@ -1,10 +1,13 @@
-import Title from '../Title/Title'
-
 const Sponsors = () => {
   return (
-    <div className="w-3/4 my-0 mx-auto">
-      <Title heading="Sponsors" />
-      <div className="grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-x-20 md:space-y-0 justify-between grid-flow-row place-items-center p-5">
+    <div className="max-w-7xl my-12 mx-auto">
+      <div className="text-3xl flex justify-center font-normal my-12 text-g-gray-8">
+        Partners
+      </div>
+      <div className="flex justify-center md:justify-start text-2xl lg:text-xl font-light text-g-blue-3">
+        Sponsers
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 space-y-8 md:space-x-20 md:space-y-0 justify-between grid-flow-row place-items-center pt-2 w-3/4 mx-handler">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
@@ -59,6 +62,12 @@ const Sponsors = () => {
           </g>
         </svg>
       </div>
+      <a
+        className="flex justify-center md:justify-start no-underline text-sm text-g-red-2 hover:text-g-red-3 mt-3"
+        href="https://drive.google.com/file/d/1RG_bs9SrR03GAiHa-qAgE5Va7CeiUHAf/view"
+      >
+        Become a Sponsor
+      </a>
     </div>
   )
 }
