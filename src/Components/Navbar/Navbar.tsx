@@ -127,6 +127,12 @@ export default function Navbar() {
               >
                 Home
               </a>
+              <a
+                href="#speakers-grid"
+                className="block text-sm px-2 py-4 text-black font-semibold"
+              >
+                Speakers
+              </a>
             </li>
             {user ? (
               <li onClick={logout}>
