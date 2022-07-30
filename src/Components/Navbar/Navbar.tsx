@@ -121,18 +121,20 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={`${isOpen === false ? 'hidden' : ''}`}>
+        <div className={`${isOpen === false ? 'hidden' : ''}`} >
           <ul className="bg-white border border-b-2 border-gray-200">
             <li className="active">
               <a
                 href="#home-grid"
                 className="block text-sm px-2 py-4 text-black font-semibold"
+                onClick={() => setIsOpen(false)} 
               >
                 Home
               </a>
               <a
                 href="#speakers-grid"
                 className="block text-sm px-2 py-4 text-black font-semibold"
+                onClick={() => setIsOpen(false)} 
               >
                 Speakers
               </a>
@@ -140,7 +142,7 @@ export default function Navbar() {
             {user ? (
               <li onClick={logout}>
                 <Link to="/ccd2022">
-                  <p className="block text-sm px-2 py-4 text-black font-semibold">
+                  <p className="block text-sm px-2 py-4 text-black font-semibold" onClick={() => setIsOpen(false)}>
                     Log Out
                   </p>
                 </Link>
