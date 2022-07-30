@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react'
 import svglogo from '../../Images/logo.svg'
 import { auth, logout, signInWithGoogle } from '../../services/UserAuth'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [active, setActive] =useState("Home")
   const [user] = useAuthState(auth)
 
   useEffect(() => {
@@ -43,15 +44,17 @@ export default function Navbar() {
               <div className="hidden md:flex items-center space-x-9">
                 <a
                   href="/ccd2022"
-                  className="py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg"
+                  className= {active=="Home" ? "py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg" : "py-3 px-2 text-googleBlue font-semibold text-lg"}
                   style={{ textDecoration: 'none' }}
+                  onClick={()=>setActive("Home")}
                 >
                   Home
                 </a>
                 <a
                   href="#speakers-grid"
-                  className="py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg"
+                  className={active=="Speakers" ? "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg" : "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg"}
                   style={{ textDecoration: 'none' }}
+                  onClick={()=>setActive("Speakers")}
                 >
                   Speakers
                 </a>
