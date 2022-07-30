@@ -14,31 +14,34 @@ const FAQ = () => {
   }
 
   return (
-    <div className="flex gap-12 flex-col md:flex-row max-w-7xl mx-auto px-6 md:px-0">
-      <div className="w-fit lg:w-3/5">
+    <div className="flex gap-8 flex-col md:flex-row max-w-7xl mx-auto px-6 md:px-0">
+      <div className="w-fit lg:w-2/5">
         <div className="text-3xl font-light text-g-blue-3 mb-4">FAQ</div>
         <div className="text-base text-g-gray-7">Need Answers?</div>
         <div className="text-base text-g-gray-7">
           Find them here. <br />
-          <div className="mt-2">
+          <div className="mt-2 w-fit lg:w-3/5">
             For any queries related to sponsorship, please reach out to us at{' '}
-            <a href="mailto:partners@gdgcloud.kolkata.dev">
+            <a className="no-underline" href="mailto:partners@gdgcloud.kolkata.dev">
               partners@gdgcloud.kolkata.dev
             </a>
             . Any question related to participation can be asked at{' '}
-            <a href="mailto:gdgcloudkol@gmail.com">gdgcloudkol@gmail.com</a>.
+            <a className="no-underline" href="mailto:gdgcloudkol@gmail.com">
+              gdgcloudkol@gmail.com
+            </a>
+            .
           </div>
         </div>
       </div>
-      <div className="max-w-2xl mx-auto space-y-2">
-        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3">
-          <div
-            onClick={() => {
-              questionClickHandler(0)
-            }}
-            className="flex items-center cursor-pointer"
-          >
-            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg text-g-gray-7 font-light">
+      <div className="max-w-3xl mx-auto space-y-2">
+        <div
+          className="item bg-white border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9"
+          onClick={() => {
+            questionClickHandler(0)
+          }}
+        >
+          <div className="flex items-center cursor-pointer ">
+            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg  font-light">
               <span>What is CCD 2022 Kolkata?</span>
             </div>
           </div>
@@ -55,14 +58,14 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3">
+        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9">
           <div
             onClick={() => {
               questionClickHandler(1)
             }}
             className="flex items-center cursor-pointer"
           >
-            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg  text-g-gray-7 font-light">
+            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>Where can I find updates related to CCD 2022 Kolkata?</span>
             </div>
           </div>
@@ -102,14 +105,14 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3">
+        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9">
           <div
             onClick={() => {
               questionClickHandler(2)
             }}
             className="flex items-center cursor-pointer"
           >
-            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg  text-g-gray-7 font-light">
+            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>How can I attend CCD 2022 Kolkata? How much does it cost?</span>
             </div>
           </div>
@@ -128,14 +131,14 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3">
+        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9">
           <div
             onClick={() => {
               questionClickHandler(3)
             }}
             className="flex items-center cursor-pointer"
           >
-            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg  text-g-gray-7 font-light">
+            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>
                 I want to present a talk/workshop at the conference. What should I
                 do?
@@ -157,14 +160,14 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3">
+        <div className="item bg-white border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9">
           <div
             onClick={() => {
               questionClickHandler(4)
             }}
             className="flex items-center cursor-pointer"
           >
-            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg  text-g-gray-7 font-light">
+            <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>
                 Will I be provided travel/stay accommodation to attend the event?
               </span>
