@@ -25,7 +25,6 @@ const Hero = () => {
         const docRef = doc(db, 'register', user.uid)
         const docSnap = await getDoc(docRef)
         if (docSnap.exists()) {
-          console.log(docSnap.data())
           if (docSnap.data().rejected === true) {
             setRejected(true)
           }
