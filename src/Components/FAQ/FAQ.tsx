@@ -35,7 +35,7 @@ const FAQ = () => {
       </div>
       <div className="max-w-3xl mx-auto space-y-2">
         <div
-          className="item bg-g-gray-1 border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 hover:bg-g-gray-2"
+          className="item border-1  rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2"
           onClick={() => {
             questionClickHandler(0)
           }}
@@ -58,7 +58,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1  hover:bg-g-gray-2">
+        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9  bg-g-gray-1 hover:bg-g-gray-2">
           <div
             onClick={() => {
               questionClickHandler(1)
@@ -105,7 +105,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9  bg-g-gray-1  hover:bg-g-gray-2">
+        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2">
           <div
             onClick={() => {
               questionClickHandler(2)
@@ -131,7 +131,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9  bg-g-gray-1  hover:bg-g-gray-2">
+        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2">
           <div
             onClick={() => {
               questionClickHandler(3)
@@ -160,7 +160,7 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9  bg-g-gray-1  hover:bg-g-gray-2">
+        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2">
           <div
             onClick={() => {
               questionClickHandler(4)
