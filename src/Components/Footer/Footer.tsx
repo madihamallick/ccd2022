@@ -117,7 +117,7 @@ const Footer = () => {
           </div>
           <div className="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mx-6">
             <div className="text-left">
-              <h6 className="text-lg font-light text-g-gray-8 mb-3">About</h6>
+              <h6 className="text-lg font-normal text-g-gray-8 mb-3">About</h6>
               <p className="mb-2">
                 <a
                   href="https://gdg.community.dev/gdg-cloud-kolkata/"
@@ -160,7 +160,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="text-left w-fit">
-              <h6 className="text-lg font-light text-g-gray-8 mb-3">Resources</h6>
+              <h6 className="text-lg font-normal text-g-gray-8 mb-3">Resources</h6>
               <p className="mb-2">
                 <a
                   href="https://drive.google.com/file/d/1RG_bs9SrR03GAiHa-qAgE5Va7CeiUHAf/view?usp=drivesdk"
@@ -181,7 +181,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="text-left w-fit">
-              <h6 className="text-lg font-light text-g-gray-8 mb-3 flex justify-left">
+              <h6 className="text-lg font-normal text-g-gray-8 mb-3 flex justify-left">
                 Contact
               </h6>
               <p className="flex items-center justify-left md:justify-start mb-4 text-g-gray-7 font-light">
