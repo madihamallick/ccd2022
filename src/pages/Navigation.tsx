@@ -6,6 +6,7 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import Dashboard from './Dashboard/Dashboard'
 import NotFound from './NotFound/NotFound'
 import Tickets from './Tickets/Tickets'
+import Sessions from './Schedule/Schedule'
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const [user] = useAuthState(auth)
@@ -19,6 +20,7 @@ export default function Navigation() {
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="/ccd2022" element={<Home />} />
+        <Route path="/ccd2022/sessions" element={<Sessions />} />
         <Route path="/ccd2022/rsvp" element={<PrivateRoute component={Forms} />} />
         <Route
           path="/ccd2022/dashboard"

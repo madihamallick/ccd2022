@@ -23,3 +23,40 @@ body {
       
     }
   }
+  .container1{
+    position: relative; 
+    overflow: hidden;
+    height: fit-content;
+    width: inherit;
+  }
+  
+  #fade-in1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width: inherit;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    transform: translateX(0);
+    background: transparent;
+  }
+  
+  #fade-in2 {
+    height: auto;
+    width: inherit;
+    background: transparent;
+    transition: .3s cubic-bezier(.25,.8,.5,1);
+    transform: translateX(100%);
+  }
+  
+  #fade-in1.inactive{
+    transform: translateX(-100%);
+  }
+  #fade-in2.active {
+    transform: translateX(0);
+  }
+  
+  
+  
+  
+  
