@@ -25,7 +25,7 @@ module.exports = {
         'g-yellow-3': '#F4B400',
         'g-green-1': '#7BCFA9',
         'g-green-2': '#33B679',
-        'g-green-3': '#0F958',
+        'g-green-3': '#0F9D58',
         'g-gray-1': '#F2F2F2',
         'g-gray-2': '#E6E6E6',
         'g-gray-3': '#CCCCCC',
