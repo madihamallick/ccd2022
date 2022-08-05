@@ -8,7 +8,6 @@ import { Link } from 'react-router-dom'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [active, setActive] =useState("Home")
   const [user] = useAuthState(auth)
 
   useEffect(() => {
@@ -26,9 +25,7 @@ export default function Navbar() {
   return (
     <>
       <nav
-        className={`${
-          scrolled ? 'shadow-lg bg-white/90' : ''
-        } z-[100] fixed w-full`}
+        className={`${scrolled ? 'shadow-lg bg-white/90' : ''} z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
           <div className="flex justify-between">
@@ -42,22 +39,50 @@ export default function Navbar() {
 
             <div className="hidden md:flex items-center space-x-9">
               <div className="hidden md:flex items-center space-x-9">
-                <a
-                  href="#home-grid"
-                  className= {active==="Home" ? "py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg" : "py-3 px-2 text-googleBlue font-semibold text-lg"}
-                  style={{ textDecoration: 'none' }}
-                  onClick={()=>setActive("Home")}
+                <Link
+                  to="/ccd2022"
+                  className={
+                    window.location.pathname === '/ccd2022'
+                      ? 'py-3 px-2 text-googleBlue border-b-4 border-googleBlue hover:text-googleGreen font-semibold text-lg no-underline'
+                      : 'py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen text-lg no-underline'
+                  }
                 >
                   Home
-                </a>
-                <a
-                  href="#speakers-grid"
-                  className={active==="Speakers" ? "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg" : "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg"}
-                  style={{ textDecoration: 'none' }}
-                  onClick={()=>setActive("Speakers")}
+                </Link>
+
+                <Link
+                  to="/ccd2022/speakers"
+                  className={
+                    window.location.pathname === '/ccd2022/speakers'
+                      ? 'py-3 px-2 text-googleBlue font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg no-underline'
+                      : 'py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg no-underline'
+                  }
                 >
                   Speakers
-                </a>
+                </Link>
+
+                <Link
+                  to="/ccd2022/sessions"
+                  className={
+                    window.location.pathname === '/ccd2022/sessions'
+                      ? 'py-3 px-2 text-googleBlue font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg no-underline'
+                      : 'py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg no-underline'
+                  }
+                >
+                  Sessions
+                </Link>
+
+                <Link
+                  to="/ccd2022/schedule"
+                  className={
+                    window.location.pathname === '/ccd2022/schedule'
+                      ? 'py-3 px-2 text-googleBlue font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg no-underline'
+                      : 'py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg no-underline'
+                  }
+                >
+                  Schedule
+                </Link>
+
                 {/*
                 <a
                   href="#!"
@@ -121,20 +146,20 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={`${isOpen === false ? 'hidden' : ''}`} >
+        <div className={`${isOpen === false ? 'hidden' : ''}`}>
           <ul className="bg-white border border-b-2 border-gray-200">
             <li className="active">
               <a
                 href="#home-grid"
                 className="block text-sm px-2 py-4 text-black font-semibold"
-                onClick={() => setIsOpen(false)} 
+                onClick={() => setIsOpen(false)}
               >
                 Home
               </a>
               <a
                 href="#speakers-grid"
                 className="block text-sm px-2 py-4 text-black font-semibold"
-                onClick={() => setIsOpen(false)} 
+                onClick={() => setIsOpen(false)}
               >
                 Speakers
               </a>
@@ -142,7 +167,10 @@ export default function Navbar() {
             {user ? (
               <li onClick={logout}>
                 <Link to="/ccd2022">
-                  <p className="block text-sm px-2 py-4 text-black font-semibold" onClick={() => setIsOpen(false)}>
+                  <p
+                    className="block text-sm px-2 py-4 text-black font-semibold"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Log Out
                   </p>
                 </Link>
