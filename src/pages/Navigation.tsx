@@ -6,6 +6,9 @@ import { useAuthState } from 'react-firebase-hooks/auth'
 import Dashboard from './Dashboard/Dashboard'
 import NotFound from './NotFound/NotFound'
 import Tickets from './Tickets/Tickets'
+import Sessions from './Sessions/Sessions'
+import Schedule from './Schedule/Schedule'
+import SpeakersPage from './SpeakersPage/SpeakersPage'
 
 const PrivateRoute = ({ component: Component, ...rest }) => {
   const [user] = useAuthState(auth)
@@ -28,6 +31,9 @@ export default function Navigation() {
           path="/ccd2022/tickets"
           element={<PrivateRoute component={Tickets} />}
         />
+        <Route path="/ccd2022/speakers" element={<SpeakersPage />} />
+        <Route path="/ccd2022/sessions" element={<Sessions />} />
+        <Route path="/ccd2022/schedule" element={<Schedule />} />
       </Routes>
     </Router>
   )
