@@ -5,10 +5,9 @@ import { auth, logout, signInWithGoogle } from '../../services/UserAuth'
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { Link } from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({ active, handleClick }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const [active, setActive] =useState("Home")
   const [user] = useAuthState(auth)
 
   useEffect(() => {
@@ -22,13 +21,15 @@ export default function Navbar() {
   }, [])
 
   const toggleNav = () => setIsOpen(!isOpen)
+  const mobileTabClickHandler = (tab) => {
+    setIsOpen(false)
+    handleClick(tab)
+  }
 
   return (
     <>
       <nav
-        className={`${
-          scrolled ? 'shadow-lg bg-white/90' : ''
-        } z-[100] fixed w-full`}
+        className={`${scrolled ? 'shadow-lg bg-white/90' : ''} z-[100] fixed w-full`}
       >
         <div className="max-w-6xl mx-auto  px-4">
           <div className="flex justify-between">
@@ -42,22 +43,39 @@ export default function Navbar() {
 
             <div className="hidden md:flex items-center space-x-9">
               <div className="hidden md:flex items-center space-x-9">
-                <a
-                  href="#home-grid"
-                  className= {active==="Home" ? "py-3 px-2 text-googleBlue border-b-4 border-googleBlue font-semibold text-lg" : "py-3 px-2 text-googleBlue font-semibold text-lg"}
-                  style={{ textDecoration: 'none' }}
-                  onClick={()=>setActive("Home")}
+                <div
+                  role="button"
+                  className={
+                    active === 'Home'
+                      ? 'py-3 px-2 text-g-blue-3 hover:text-blue-600 border-b-4 border-googleBlue transition duration-300 text-lg'
+                      : 'py-3 px-2 text-g-gray-7 hover:text-g-gray-9 transition duration-300 text-lg'
+                  }
+                  onClick={() => handleClick('Home')}
                 >
                   Home
-                </a>
-                <a
-                  href="#speakers-grid"
-                  className={active==="Speakers" ? "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen border-b-4 border-googleBlue transition duration-300 text-lg" : "py-3 px-2 text-gray-500 font-semibold hover:text-googleGreen transition duration-300 text-lg"}
-                  style={{ textDecoration: 'none' }}
-                  onClick={()=>setActive("Speakers")}
+                </div>
+                <div
+                  role="button"
+                  className={
+                    active === 'Speakers'
+                      ? 'py-3 px-2 text-g-blue-3 hover:text-blue-600 border-b-4 border-googleBlue transition duration-300 text-lg'
+                      : 'py-3 px-2 text-g-gray-7 hover:text-g-gray-9 transition duration-300 text-lg'
+                  }
+                  onClick={() => handleClick('Speakers')}
                 >
                   Speakers
-                </a>
+                </div>
+                <div
+                  role="button"
+                  className={
+                    active === 'Schedule'
+                      ? 'py-3 px-2 text-g-blue-3 hover:text-blue-600 border-b-4 border-googleBlue transition duration-300 text-lg'
+                      : 'py-3 px-2 text-g-gray-7 hover:text-g-gray-9 transition duration-300 text-lg'
+                  }
+                  onClick={() => handleClick('Schedule')}
+                >
+                  Schedule
+                </div>
                 {/*
                 <a
                   href="#!"
@@ -121,28 +139,38 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className={`${isOpen === false ? 'hidden' : ''}`} >
+        <div className={`${isOpen === false ? 'hidden' : ''}`}>
           <ul className="bg-white border border-b-2 border-gray-200">
             <li className="active">
-              <a
-                href="#home-grid"
+              <div
+                role="button"
                 className="block text-sm px-2 py-4 text-black font-semibold"
-                onClick={() => setIsOpen(false)} 
+                onClick={() => mobileTabClickHandler('Home')}
               >
                 Home
-              </a>
-              <a
-                href="#speakers-grid"
+              </div>
+              <div
+                role="button"
                 className="block text-sm px-2 py-4 text-black font-semibold"
-                onClick={() => setIsOpen(false)} 
+                onClick={() => mobileTabClickHandler('Speakers')}
               >
                 Speakers
-              </a>
+              </div>
+              <div
+                role="button"
+                className="block text-sm px-2 py-4 text-black font-semibold"
+                onClick={() => mobileTabClickHandler('Schedule')}
+              >
+                Schedule
+              </div>
             </li>
             {user ? (
               <li onClick={logout}>
                 <Link to="/ccd2022">
-                  <p className="block text-sm px-2 py-4 text-black font-semibold" onClick={() => setIsOpen(false)}>
+                  <p
+                    className="block text-sm px-2 py-4 text-black font-semibold"
+                    onClick={() => setIsOpen(false)}
+                  >
                     Log Out
                   </p>
                 </Link>

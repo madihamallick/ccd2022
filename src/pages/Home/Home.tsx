@@ -12,7 +12,6 @@ import Partners from '../../Components/Partners/Partners'
 const Home = () => {
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <Speakers />
@@ -21,7 +20,6 @@ const Home = () => {
       <FAQ />
       <Sponsors />
       <Partners />
-      <Footer />
     </>
   )
 }
