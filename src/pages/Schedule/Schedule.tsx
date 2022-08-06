@@ -62,10 +62,10 @@ const Sessions = () => {
               Day 2
             </div>
           </div>
-          <div className="container1" style={{ height: containerHeight }}>
+          <div className="schedule-container" style={{ height: containerHeight }}>
             <div
               ref={day1}
-              id="fade-in1"
+              id="fade-in-1"
               className={'box' + (day === 1 ? '' : ' inactive')}
             >
               {dayOneSessionData.timeSlots.map((slot: any) => {
@@ -147,7 +147,7 @@ const Sessions = () => {
             </div>
             <div
               ref={day2}
-              id="fade-in2"
+              id="fade-in-2"
               className={'box' + (day === 2 ? ' active' : '')}
             >
               {dayTwoSessionData.timeSlots.map((slot: any) => {

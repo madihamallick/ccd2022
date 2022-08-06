@@ -23,14 +23,14 @@ body {
       
     }
   }
-  .container1{
+  .schedule-container{
     position: relative; 
     overflow: hidden;
     height: fit-content;
     width: inherit;
   }
   
-  #fade-in1 {
+  #fade-in-1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,7 +41,7 @@ body {
     background: transparent;
   }
   
-  #fade-in2 {
+  #fade-in-2 {
     height: auto;
     width: inherit;
     background: transparent;
@@ -49,10 +49,10 @@ body {
     transform: translateX(100%);
   }
   
-  #fade-in1.inactive{
+  #fade-in-1.inactive{
     transform: translateX(-100%);
   }
-  #fade-in2.active {
+  #fade-in-2.active {
     transform: translateX(0);
   }
   
