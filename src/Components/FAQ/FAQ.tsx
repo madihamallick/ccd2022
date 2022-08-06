@@ -35,7 +35,7 @@ const FAQ = () => {
       </div>
       <div className="max-w-3xl mx-auto space-y-2">
         <div
-          className="item border-1  rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2"
+          className="item border-1 border-g-gray-3 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 hover:bg-g-gray-1"
           onClick={() => {
             questionClickHandler(0)
           }}
@@ -58,13 +58,13 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9  bg-g-gray-1 hover:bg-g-gray-2">
-          <div
-            onClick={() => {
-              questionClickHandler(1)
-            }}
-            className="flex items-center cursor-pointer"
-          >
+        <div
+          className="item border-1 border-g-gray-3 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 hover:bg-g-gray-1"
+          onClick={() => {
+            questionClickHandler(1)
+          }}
+        >
+          <div className="flex items-center cursor-pointer">
             <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>Where can I find updates related to CCD 2022 Kolkata?</span>
             </div>
@@ -105,13 +105,13 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2">
-          <div
-            onClick={() => {
-              questionClickHandler(2)
-            }}
-            className="flex items-center cursor-pointer"
-          >
+        <div
+          className="item border-1 border-g-gray-3 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 hover:bg-g-gray-1"
+          onClick={() => {
+            questionClickHandler(2)
+          }}
+        >
+          <div className="flex items-center cursor-pointer">
             <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>How can I attend CCD 2022 Kolkata? How much does it cost?</span>
             </div>
@@ -131,13 +131,13 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2">
-          <div
-            onClick={() => {
-              questionClickHandler(3)
-            }}
-            className="flex items-center cursor-pointer"
-          >
+        <div
+          className="item border-1 border-g-gray-3 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 hover:bg-g-gray-1"
+          onClick={() => {
+            questionClickHandler(3)
+          }}
+        >
+          <div className="flex items-center cursor-pointer">
             <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>
                 I want to present a talk/workshop at the conference. What should I
@@ -160,13 +160,13 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="item border-1 border-g-gray-2 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 bg-g-gray-1 hover:bg-g-gray-2">
-          <div
-            onClick={() => {
-              questionClickHandler(4)
-            }}
-            className="flex items-center cursor-pointer"
-          >
+        <div
+          className="item border-1 border-g-gray-3 rounded-md p-3 text-g-gray-7 hover:text-g-gray-9 hover:bg-g-gray-1"
+          onClick={() => {
+            questionClickHandler(4)
+          }}
+        >
+          <div className="flex items-center cursor-pointer">
             <div className="ml-3 md:ml-4 lg:ml-6 md:text-lg font-light">
               <span>
                 Will I be provided travel/stay accommodation to attend the event?

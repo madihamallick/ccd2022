@@ -68,17 +68,11 @@ const Sessions = () => {
               id="fade-in1"
               className={'box' + (day === 1 ? '' : ' inactive')}
             >
-              {dayOneSessionData.timeSlots.map((session: any) => {
-                const info = session['rooms'][0].session
-                const name = info.title
-                const startTime = getTime(info.startsAt)
-                const endTime = getTime(info.endsAt)
-                const description = info.description
-                const speakerName = info.speakers[0]?.name
-                const speakerImage = info.speakers[0]?.profilePicture
-                const technologies = info.categories.find(
-                  (c) => c.name === 'Technology'
-                )?.categoryItems
+              {dayOneSessionData.timeSlots.map((slot: any) => {
+                const startTime = getTime(slot['rooms'][0].session.startsAt)
+                const endTime = getTime(slot['rooms'][0].session.endsAt)
+                const rooms = slot['rooms']
+
                 return (
                   <div className="flex w-full lg:w-auto ">
                     <div className="w-3/10 lg:w-1/5 border-b-[1px] lg:border-r-[0px] lg:border-r-[1px] border-g-gray-3 flex flex-col items-end px-3 py-3 text-right lg:text-start">
@@ -87,32 +81,65 @@ const Sessions = () => {
                       <div className="mt-1 text-[8px] lg:text-xs">GMT (+05:30)</div>
                     </div>
                     <div className="w-7/10 lg:w-4/5 flex flex-col p-3 border-b-[1px] border-g-gray-3 grow">
-                      <div className="text-2xl font-light">{name}</div>
-                      {speakerName && (
-                        <div className="flex items-center my-2 p-1 border-1 border-g-blue-3 w-fit rounded-full bg-g-blue-3 text-white">
-                          <img
-                            className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
-                            src={speakerImage}
-                            alt=""
-                          />
-                          <span className="text-xs ml-2  ">{speakerName}</span>
-                        </div>
-                      )}
+                      {rooms.map((room, index) => {
+                        const info = room['session']
+                        const name = info.title
+                        const description = info.description
 
-                      {description && (
-                        <div className="text-base font-light">{description}</div>
-                      )}
-                      {technologies && (
-                        <div className="flex items-center flex-wrap gap-2 my-2">
-                          {technologies.map((tech) => {
-                            return (
-                              <div className="text-xs border-1 border-g-gray-5 bg-g-gray-1 rounded-full px-2 py-1 w-fit">
-                                {tech.name}
+                        const technologies = info.categories.find(
+                          (c) => c.name === 'Technology'
+                        )?.categoryItems
+                        return (
+                          <div
+                            className={
+                              index > 0
+                                ? 'mt-4 pt-4 border-t-[1px] border-g-gray-3'
+                                : ''
+                            }
+                          >
+                            <div className="text-2xl font-light">{name}</div>
+                            {info.speakers && (
+                              <div className="flex items-center gap-2">
+                                {info.speakers?.map((speaker) => {
+                                  const speakerName = speaker.name
+                                  const speakerImage = speaker.profilePicture
+                                  return (
+                                    speakerName && (
+                                      <div className="flex items-center my-2 p-1 border-1 border-g-blue-3 w-fit rounded-full bg-g-blue-3 text-white">
+                                        <img
+                                          className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
+                                          src={speakerImage}
+                                          alt=""
+                                        />
+                                        <span className="text-xs ml-2  ">
+                                          {speakerName}
+                                        </span>
+                                      </div>
+                                    )
+                                  )
+                                })}
                               </div>
-                            )
-                          })}
-                        </div>
-                      )}
+                            )}
+
+                            {description && (
+                              <div className="text-sm lg:text-base font-light">
+                                {description}
+                              </div>
+                            )}
+                            {technologies && (
+                              <div className="flex items-center flex-wrap gap-2 my-2">
+                                {technologies.map((tech) => {
+                                  return (
+                                    <div className="text-xs border-1 border-g-gray-5 bg-g-gray-1 rounded-full px-2 py-1 w-fit">
+                                      {tech.name}
+                                    </div>
+                                  )
+                                })}
+                              </div>
+                            )}
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 )
@@ -124,16 +151,10 @@ const Sessions = () => {
               className={'box' + (day === 2 ? ' active' : '')}
             >
               {dayTwoSessionData.timeSlots.map((slot: any) => {
-                const info = slot['rooms'][0].session
-                const name = info.title
-                const startTime = getTime(info.startsAt)
-                const endTime = getTime(info.endsAt)
-                const description = info.description
-                const speakerName = info.speakers[0]?.name
-                const speakerImage = info.speakers[0]?.profilePicture
-                const technologies = info.categories.find(
-                  (c) => c.name === 'Technology'
-                )?.categoryItems
+                const startTime = getTime(slot['rooms'][0].session.startsAt)
+                const endTime = getTime(slot['rooms'][0].session.endsAt)
+                const rooms = slot['rooms']
+
                 return (
                   <div className="flex w-full lg:w-auto ">
                     <div className="w-3/10 lg:w-1/5 border-b-[1px] lg:border-r-[0px] lg:border-r-[1px] border-g-gray-3 flex flex-col items-end px-3 py-3 text-right lg:text-start">
@@ -142,32 +163,65 @@ const Sessions = () => {
                       <div className="mt-1 text-[8px] lg:text-xs">GMT (+05:30)</div>
                     </div>
                     <div className="w-7/10 lg:w-4/5 flex flex-col p-3 border-b-[1px] border-g-gray-3 grow">
-                      <div className="text-2xl font-light">{name}</div>
-                      {speakerName && (
-                        <div className="flex items-center my-2 p-1 border-1 border-g-blue-3 w-fit rounded-full bg-g-blue-3 text-white">
-                          <img
-                            className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
-                            src={speakerImage}
-                            alt=""
-                          />
-                          <span className="text-xs ml-2  ">{speakerName}</span>
-                        </div>
-                      )}
+                      {rooms.map((room, index) => {
+                        const info = room['session']
+                        const name = info.title
+                        const description = info.description
 
-                      {description && (
-                        <div className="text-base font-light">{description}</div>
-                      )}
-                      {technologies && (
-                        <div className="flex items-center flex-wrap gap-2 my-2">
-                          {technologies.map((tech) => {
-                            return (
-                              <div className="text-xs border-1 border-g-gray-5 bg-g-gray-1 rounded-full px-2 py-1 w-fit">
-                                {tech.name}
+                        const technologies = info.categories.find(
+                          (c) => c.name === 'Technology'
+                        )?.categoryItems
+                        return (
+                          <div
+                            className={
+                              index > 0
+                                ? 'mt-4 pt-4 border-t-[1px] border-g-gray-3'
+                                : ''
+                            }
+                          >
+                            <div className="text-2xl font-light">{name}</div>
+                            {info.speakers && (
+                              <div className="flex items-center gap-2">
+                                {info.speakers?.map((speaker) => {
+                                  const speakerName = speaker.name
+                                  const speakerImage = speaker.profilePicture
+                                  return (
+                                    speakerName && (
+                                      <div className="flex items-center my-2 p-1 border-1 border-g-blue-3 w-fit rounded-full bg-g-blue-3 text-white">
+                                        <img
+                                          className="inline-block h-5 w-5 rounded-full ring-2 ring-white"
+                                          src={speakerImage}
+                                          alt=""
+                                        />
+                                        <span className="text-xs ml-2  ">
+                                          {speakerName}
+                                        </span>
+                                      </div>
+                                    )
+                                  )
+                                })}
                               </div>
-                            )
-                          })}
-                        </div>
-                      )}
+                            )}
+
+                            {description && (
+                              <div className="text-sm lg:text-base font-light">
+                                {description}
+                              </div>
+                            )}
+                            {technologies && (
+                              <div className="flex items-center flex-wrap gap-2 my-2">
+                                {technologies.map((tech) => {
+                                  return (
+                                    <div className="text-xs border-1 border-g-gray-5 bg-g-gray-1 rounded-full px-2 py-1 w-fit">
+                                      {tech.name}
+                                    </div>
+                                  )
+                                })}
+                              </div>
+                            )}
+                          </div>
+                        )
+                      })}
                     </div>
                   </div>
                 )
