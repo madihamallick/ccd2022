@@ -12,7 +12,7 @@ import msitlogo from '../../Images/gdsc-msit-logo.png'
 
 const Partners = () => {
   return (
-    <div className="max-w-7xl my-12 mx-auto">
+    <div className="max-w-7xl my-16 mx-auto">
       <div className="flex justify-center md:justify-start text-2xl lg:text-xl font-light text-g-blue-3">
         Community Partners
       </div>

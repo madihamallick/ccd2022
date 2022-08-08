@@ -97,6 +97,9 @@ const Sessions = () => {
                                 : ''
                             }
                           >
+                            <div className="text-xs bg-green-100 px-2 py-1 mb-2 w-fit">
+                              { name === "Lunch" ? "Cafeteria" : "Workshop Hall" }
+                            </div>
                             <div className="text-2xl font-light">{name}</div>
                             {info.speakers && (
                               <div className="flex items-center gap-2">
@@ -179,6 +182,9 @@ const Sessions = () => {
                                 : ''
                             }
                           >
+                            <div className="text-xs bg-green-100 px-2 py-1 mb-2 w-fit">
+                              Hall: {info.room}
+                            </div>
                             <div className="text-2xl font-light">{name}</div>
                             {info.speakers && (
                               <div className="flex items-center gap-2">

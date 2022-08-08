@@ -121,13 +121,12 @@ const Hero = () => {
               )}
 
               <a
-                className="transition ease-in-out  bg-green-600   hover:bg-emerald-600 duration-300 text-center w-fit rounded"
-                href="https://sessionize.com/cloud-community-days"
-                target={'_blank'}
-                rel="noreferrer"
+                className="transition ease-in-out  bg-gray-500 duration-300 text-center w-fit rounded disabled"
+                href="#"
+                aria-disabled={true}
               >
-                <button className="text-white  h-fit w-fit text-base py-2 px-4 rounded">
-                  Become a Speaker
+                <button className="text-white  h-fit w-fit text-base py-2 px-4 rounded disabled">
+                  CFS Closed
                 </button>
               </a>
             </div>

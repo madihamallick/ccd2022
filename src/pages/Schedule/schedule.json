@@ -286,7 +286,7 @@
           },
           {
             "id": "370375",
-            "title": "Get more out of your ML Workflow",
+            "title": "Get more out of your ML workflow: Minimal MLOps everyone should know",
             "description": "In this session, I will discuss the importance of experiment tracking, model and dataset versioning, and overall best practices to structure your ML workflow. The talk will explore how Weights and Biases can be used with different frameworks and across different cloud platforms.",
             "startsAt": "2022-08-27T15:00:00",
             "endsAt": "2022-08-27T16:00:00",
