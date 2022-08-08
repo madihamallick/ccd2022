@@ -71,6 +71,12 @@ export default function Navigation() {
       <Routes>
         <Route path="*" element={<NotFound />} />
         <Route path="/" element={<Home />} />
+        <Route path="/sessions" element={<Sessions />} />
+        <Route
+          path="/tickets"
+          element={<PrivateRoute component={Tickets} />}
+        />
+        <Route path="/rsvp" element={<PrivateRoute component={Forms} />} />
         <Route path="/ccd2022" element={<Home />} />
         <Route path="/ccd2022/sessions" element={<Sessions />} />
         <Route path="/ccd2022/rsvp" element={<PrivateRoute component={Forms} />} />
