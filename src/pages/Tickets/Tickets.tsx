@@ -81,7 +81,10 @@ const Tickets = () => {
 
   return (
     <>
-      <Title heading="Tickets" />
+
+      <div className="w-full max-w-7xl items-center justify-center flex flex-col lg:flex-row my-0 mx-auto gap-12 pt-20 lg:pt-28 lg:pb-[62px] px-4">
+        <div className="w-full">
+          <div className="text-6xl text-g-gray-8 mb-8 font-light">Tickets</div>
       <p className="mb-4 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
         Congratulations on making it through hundreds of applications! <br />
         We look forward to see you at the Cloud Community Days.
@@ -196,6 +199,8 @@ const Tickets = () => {
       </div>
       <br />
       <br />
+      </div>
+    </div>
     </>
   )
 }

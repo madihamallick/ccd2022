@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react'
 import svglogo from '../../Images/logo.svg'
 import { auth, logout, signInWithGoogle } from '../../services/UserAuth'
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { Link } from 'react-router-dom'
+import { Link, Navigate } from 'react-router-dom'
 
 export default function Navbar({ active, handleClick }) {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [profileMenuOpen, setProfileMenuOpen] = useState(false)
   const [user] = useAuthState(auth)
 
   useEffect(() => {
@@ -35,9 +36,9 @@ export default function Navbar({ active, handleClick }) {
           <div className="flex justify-between">
             <div className="flex space-x-7">
               <div>
-                <a href="#!" className="flex items-center px-2 my-1.5">
+                <Link to="/ccd2022" className="flex items-center px-2 my-1.5">
                   <img src={svglogo} alt="Logo" className="w-80 mr-2" />
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -76,32 +77,44 @@ export default function Navbar({ active, handleClick }) {
                 >
                   Schedule
                 </div>
-                {/*
-                <a
-                  href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleYellow transition duration-300"
-                >
-                  Timeline
-                </a>
-                <a
-                  href="#!"
-                  className="py-4 px-2 text-gray-500 font-semibold hover:text-googleRed transition duration-300"
-                >
-                  Sponsors
-                </a> */}
               </div>
-              {user ? (
-                <Link to="/ccd2022">
-                  <button
-                    className="mt-1 py-1.5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
-                    onClick={logout}
-                  >
-                    Log Out
-                  </button>
-                </Link>
+              {user ? (<>
+                <div className="ml-3 relative">
+                  <div>
+                    <button type="button" className="bg-gray-800 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white" id="user-menu-button" aria-expanded="false" aria-haspopup="true" onClick={() => setProfileMenuOpen(!profileMenuOpen)}>
+                      <span className="sr-only">Profile Menu</span>
+                      <img className="h-8 w-8 rounded-full" src={user.photoURL ? user.photoURL : ""} alt="" />
+                    </button>
+                  </div>
+                  {
+                    profileMenuOpen ? (
+                      <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabIndex={-1}>
+                        <Link to="/ccd2022/dashboard" className='no-underline'>
+                          <button
+                            onClick={() => setProfileMenuOpen(false)}
+                            className="block px-4 py-2 w-full text-sm text-gray-700  hover:bg-gray-100" role="menuitem" tabIndex={-1} id="user-menu-item-1"
+                          >
+                            Dashboard
+                          </button>
+                        </Link>
+                        <Link to="/ccd2022" className='no-underline'>
+                          <button
+
+                            className="block px-4 py-2 w-full text-sm text-gray-700 hover:bg-gray-100" role="menuitem" tabIndex={-1} id="user-menu-item-2"
+                            onClick={() => { logout(); setProfileMenuOpen(false); }}
+                          >
+                            Log Out
+                          </button>
+                        </Link>
+                      </div>
+                    ) : (<></>)
+                  }
+
+                </div>
+              </>
               ) : (
                 <button
-                  className="mt-1 py-1.5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
+                  className="mt-1 py-1.5 bg-blue-600 hover:bg-blue-700 text-white  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
                   onClick={signInWithGoogle}
                 >
                   Login
@@ -178,31 +191,6 @@ export default function Navbar({ active, handleClick }) {
             ) : (
               ''
             )}
-
-            {/* <li>
-              <a
-                href="#services"
-                className="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
-              >
-                Speakers
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
-              >
-                Timeline
-              </a>
-            </li>
-            <li>
-              <a
-                href="#contact"
-                className="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300"
-              >
-                Sponsors
-              </a>
-            </li> */}
           </ul>
         </div>
       </nav>
