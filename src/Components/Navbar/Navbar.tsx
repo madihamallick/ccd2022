@@ -109,7 +109,6 @@ export default function Navbar({ active, handleClick }) {
                       </div>
                     ) : (<></>)
                   }
-
                 </div>
               </>
               ) : (
@@ -125,7 +124,7 @@ export default function Navbar({ active, handleClick }) {
             <div className="md:hidden flex items-center space-x-2">
               {user ? null : (
                 <button
-                  className="mt-1 py-1.5 bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-black  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
+                  className="mt-1 py-1.5 bg-blue-600 hover:bg-blue-700 text-white  px-4 border border-blue-500 hover:border-transparent rounded text-lg"
                   onClick={signInWithGoogle}
                 >
                   Login
@@ -177,7 +176,17 @@ export default function Navbar({ active, handleClick }) {
                 Schedule
               </div>
             </li>
-            {user ? (
+            {user ? (<>
+              <hr />
+              <li onClick={() => {setIsOpen(false); setProfileMenuOpen(false)}}>
+                <Link to="/ccd2022/dashboard" className='no-underline'>
+                  <p
+                    className="block text-sm px-2 py-4 text-black font-semibold"
+                  >
+                    Dashboard
+                  </p>
+                </Link>
+              </li>
               <li onClick={logout}>
                 <Link to="/ccd2022">
                   <p
@@ -188,7 +197,7 @@ export default function Navbar({ active, handleClick }) {
                   </p>
                 </Link>
               </li>
-            ) : (
+            </>) : (
               ''
             )}
           </ul>
