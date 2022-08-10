@@ -740,7 +740,7 @@
             "name": "Megh 1",
             "session": {
               "id": "370375",
-              "title": "Get more out of your ML Workflow",
+              "title": "Get more out of your ML workflow: Minimal MLOps everyone should know",
               "description": "In this session, I will discuss the importance of experiment tracking, model and dataset versioning, and overall best practices to structure your ML workflow. The talk will explore how Weights and Biases can be used with different frameworks and across different cloud platforms.",
               "startsAt": "2022-08-27T15:00:00",
               "endsAt": "2022-08-27T16:00:00",
@@ -1186,15 +1186,54 @@
             "recordingUrl": null
           },
           {
-            "id": "922e2caa-e271-410c-94d6-ffc39e0299b8",
-            "title": "Session 5",
-            "description": null,
+            "id": "372998",
+            "title": "Building Semantic Search Engines",
+            "description": "This session would include the science behind semantic search engines, steps involved in building one, how are they different from keyword based search engines and why is it such a hard problem in the real world.",
             "startsAt": "2022-08-28T13:45:00",
             "endsAt": "2022-08-28T14:25:00",
-            "isServiceSession": true,
+            "isServiceSession": false,
             "isPlenumSession": false,
-            "speakers": [],
-            "categories": [],
+            "speakers": [
+              {
+                "id": "bf1835c6-ec47-47f0-871e-39e6152dfa32",
+                "name": "Shweta Bhatt"
+              }
+            ],
+            "categories": [
+              {
+                "id": 41169,
+                "name": "Session Format",
+                "categoryItems": [
+                  {
+                    "id": 130786,
+                    "name": "Session"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 41170,
+                "name": "Technology",
+                "categoryItems": [
+                  {
+                    "id": 130791,
+                    "name": "Machine Learning"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 41171,
+                "name": "Audience level",
+                "categoryItems": [
+                  {
+                    "id": 130803,
+                    "name": "Intermediate"
+                  }
+                ],
+                "sort": 2
+              }
+            ],
             "roomId": 27325,
             "room": "Megh 1",
             "liveUrl": null,
@@ -2420,15 +2459,55 @@
             "id": 27325,
             "name": "Megh 1",
             "session": {
-              "id": "922e2caa-e271-410c-94d6-ffc39e0299b8",
-              "title": "Session 5",
-              "description": null,
+              "id": "372998",
+              "title": "Building Semantic Search Engines",
+              "description": "This session would include the science behind semantic search engines, steps involved in building one, how are they different from keyword based search engines and why is it such a hard problem in the real world.",
               "startsAt": "2022-08-28T13:45:00",
               "endsAt": "2022-08-28T14:25:00",
-              "isServiceSession": true,
+              "isServiceSession": false,
               "isPlenumSession": false,
-              "speakers": [],
-              "categories": [],
+              "speakers": [
+                {
+                  "id": "bf1835c6-ec47-47f0-871e-39e6152dfa32",
+                  "name": "Shweta Bhatt",
+                  "profilePicture": "https://sessionize.com/image/d4ee-400o400o2-JXHUUNQ1mNrcJQZN8FBiEh.png"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 41169,
+                  "name": "Session Format",
+                  "categoryItems": [
+                    {
+                      "id": 130786,
+                      "name": "Session"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 41170,
+                  "name": "Technology",
+                  "categoryItems": [
+                    {
+                      "id": 130791,
+                      "name": "Machine Learning"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 41171,
+                  "name": "Audience level",
+                  "categoryItems": [
+                    {
+                      "id": 130803,
+                      "name": "Intermediate"
+                    }
+                  ],
+                  "sort": 2
+                }
+              ],
               "roomId": 27325,
               "room": "Megh 1",
               "liveUrl": null,
