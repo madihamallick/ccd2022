@@ -8,7 +8,7 @@ const Sponsors = () => {
 
       <p className="mb-4 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
         We're thankful to all our sponsors who are making CCD 2022 Kolkata amazing. <br />
-        To become a sponsor, please email as at <a href="mailto:partners@gdgcloud.kolata.dev">partners@gdgcloud.kolata.dev</a>
+        To become a sponsor, please email as at <a href="mailto:partners@gdgcloud.kolkata.dev">partners@gdgcloud.kolkata.dev</a>
       </p>
       <br />
       <div className="max-w-sm mx-auto">
