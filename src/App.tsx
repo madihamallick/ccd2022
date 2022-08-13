@@ -6,7 +6,7 @@ import Navigation from './pages/Navigation'
 const Page = () => {
   return (
     <>
-      <HashRouter>
+      <HashRouter basename="/">
         <Navigation />
       </HashRouter>
     </>
