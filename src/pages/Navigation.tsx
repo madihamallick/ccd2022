@@ -44,6 +44,7 @@ export default function Navigation() {
   const navBarTabClickHandler = (tab) => {
     if (tab === 'Home') {
       setActiveTab('Home')
+      navigate('/ccd2022')
       if (location.pathname === '/ccd2022') {
         window.scrollTo(0, 0)
       } else {
