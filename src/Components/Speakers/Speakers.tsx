@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Socials from '../Socials/Socials'
 import Title from '../Title/Title'
+import linkedinIcon from '../../Images/icons-linkedin.svg'
 // import speakersData from './speakersData.json'
 
 const Speakers = () => {
@@ -60,7 +61,13 @@ const Speakers = () => {
             <div className="text-sm font-light mt-2 text-center">
               {speaker.tagLine}
             </div>
+            {speaker.fullName === 'Dikshita Desai' 
+            ? 
+            <a className="py-2" href="https://www.linkedin.com/in/desaidikshita/" rel="noopener noreferrer" target="_blank">
+              <img src={linkedinIcon} alt="linkedin" />
+            </a> : 
             <Socials links={[...speaker?.links]} />
+          }
           </div>
         ))}
         {showModal ? (
@@ -91,10 +98,13 @@ const Speakers = () => {
                       {modalData.bio}
                     </p>
                     <div className="pt-10">
-                      <Socials
-                        links={[...modalData?.links]}
-                        className="absolute bottom-4"
-                      />
+                      {modalData.fullName === 'Dikshita Desai' 
+                      ? 
+                      <a className="py-2 absolute bottom-4" href="https://www.linkedin.com/in/desaidikshita/" rel="noopener noreferrer" target="_blank">
+                        <img src={linkedinIcon} alt="linkedin" />
+                      </a> : 
+                      <Socials links={[...modalData?.links]} className="absolute bottom-4"/>
+                      }
                     </div>
                   </div>
 
