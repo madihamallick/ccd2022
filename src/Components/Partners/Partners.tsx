@@ -1,4 +1,4 @@
-import Title from '../Title/Title'
+// import Title from '../Title/Title'
 // import logo from '../../Images/gdsc-logo.png'
 
 import partnersData from './Partners.json'
@@ -18,7 +18,12 @@ const Partners = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src={partner.logo} alt="logo" className="w-[220px]" />
+              <img src={partner.logo} alt="logo" style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain'
+                
+              }} />
             </a>
           )
         })}
