@@ -21,8 +21,8 @@ const Partners = () => {
               <img src={partner.logo} alt="logo" style={{
                 width: '100%',
                 height: '100%',
-                objectFit: 'contain'
-                
+                objectFit: 'contain',
+                maxHeight: '150px'
               }} />
             </a>
           )
