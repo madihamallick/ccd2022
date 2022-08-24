@@ -1,14 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f2a6b0c1.css",
-    "main.js": "/static/js/main.19d55540.js",
-    "static/media/gdsc-logo.gif": "/static/media/gdsc-logo.c4dc897894a7a1e2b603.gif",
-    "index.html": "/index.html",
-    "main.f2a6b0c1.css.map": "/static/css/main.f2a6b0c1.css.map",
-    "main.19d55540.js.map": "/static/js/main.19d55540.js.map"
+    "main.css": "/ccd2022/static/css/main.2ba3602f.css",
+    "main.js": "/ccd2022/static/js/main.4c58115b.js",
+    "static/media/gdsc-logo.gif": "/ccd2022/static/media/gdsc-logo.c4dc897894a7a1e2b603.gif",
+    "static/media/GoogleSans-Regular_0.ttf": "/ccd2022/static/media/GoogleSans-Regular_0.0d01ceaea2903216c4ee.ttf",
+    "static/media/logo.svg": "/ccd2022/static/media/logo.51a2f67f6f6d78905cfd7449dd9f8c30.svg",
+    "static/media/logo.png": "/ccd2022/static/media/logo.26ff8abf519779175358.png",
+    "static/media/icons-blog.svg": "/ccd2022/static/media/icons-blog.aa3e997b40ea1b77084bcc23acd2d72c.svg",
+    "static/media/icons-github.svg": "/ccd2022/static/media/icons-github.8aac659ded1eac7c3b47a9c51cd0fd24.svg",
+    "static/media/icons-sessonize.svg": "/ccd2022/static/media/icons-sessonize.1451469073c1ff6e98a15b3fd041d3d5.svg",
+    "static/media/icons-linkedin.svg": "/ccd2022/static/media/icons-linkedin.924da0787a565598a8b885ab36e6ed3c.svg",
+    "static/media/icons-twitter.svg": "/ccd2022/static/media/icons-twitter.8b178ca78afa8f7e3f2e3be6b4079712.svg",
+    "index.html": "/ccd2022/index.html",
+    "static/media/icons-facebook.svg": "/ccd2022/static/media/icons-facebook.bc122dbf0095765aaa4721b04b06c02e.svg",
+    "main.2ba3602f.css.map": "/ccd2022/static/css/main.2ba3602f.css.map",
+    "main.4c58115b.js.map": "/ccd2022/static/js/main.4c58115b.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2a6b0c1.css",
-    "static/js/main.19d55540.js"
+    "static/css/main.2ba3602f.css",
+    "static/js/main.4c58115b.js"
   ]
 }
