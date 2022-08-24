@@ -881,15 +881,62 @@
             "recordingUrl": null
           },
           {
-            "id": "3317bad8-5612-4870-859c-6aeb81ce0fa3",
-            "title": "Keynote",
-            "description": null,
+            "id": "376451",
+            "title": "Keynote: Rolling out your data idea into an application",
+            "description": "Keynote setting the theme for Google Cloud Services around databases, and data.\r\n\r\nWill talk about the foundations of database design, applications in ML and AI, AutoML, and Delivering user experience as a service with Google Cloud",
             "startsAt": "2022-08-28T09:15:00",
-            "endsAt": "2022-08-28T09:45:00",
-            "isServiceSession": true,
+            "endsAt": "2022-08-28T09:55:00",
+            "isServiceSession": false,
             "isPlenumSession": true,
-            "speakers": [],
-            "categories": [],
+            "speakers": [
+              {
+                "id": "65ca5e93-1838-4b0a-b555-71c1fc3c33e0",
+                "name": "Abirami Sukumaran",
+                "profilePicture": "https://sessionize.com/image/930c-200o200o2-7EBKDVm9dFkh9szkNTfyTA.png"
+              }
+            ],
+            "categories": [
+              {
+                "id": 41169,
+                "name": "Session Format",
+                "categoryItems": [],
+                "sort": 0
+              },
+              {
+                "id": 41170,
+                "name": "Technology",
+                "categoryItems": [
+                  {
+                    "id": 130788,
+                    "name": "Google Cloud Platform"
+                  },
+                  {
+                    "id": 130789,
+                    "name": "Cloud"
+                  },
+                  {
+                    "id": 130791,
+                    "name": "Machine Learning"
+                  },
+                  {
+                    "id": 130800,
+                    "name": "Data Science"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 41171,
+                "name": "Audience level",
+                "categoryItems": [
+                  {
+                    "id": 130801,
+                    "name": "Beginner"
+                  }
+                ],
+                "sort": 2
+              }
+            ],
             "roomId": 27325,
             "room": "Megh 1",
             "liveUrl": null,
@@ -1815,15 +1862,62 @@
             "id": 27325,
             "name": "Megh 1",
             "session": {
-              "id": "3317bad8-5612-4870-859c-6aeb81ce0fa3",
-              "title": "Keynote",
-              "description": null,
+              "id": "376451",
+              "title": "Keynote: Rolling out your data idea into an application",
+              "description": "Keynote setting the theme for Google Cloud Services around databases, and data.\r\n\r\nWill talk about the foundations of database design, applications in ML and AI, AutoML, and Delivering user experience as a service with Google Cloud",
               "startsAt": "2022-08-28T09:15:00",
-              "endsAt": "2022-08-28T09:45:00",
-              "isServiceSession": true,
+              "endsAt": "2022-08-28T09:55:00",
+              "isServiceSession": false,
               "isPlenumSession": true,
-              "speakers": [],
-              "categories": [],
+              "speakers": [
+                {
+                  "id": "65ca5e93-1838-4b0a-b555-71c1fc3c33e0",
+                  "name": "Abirami Sukumaran",
+                  "profilePicture": "https://sessionize.com/image/930c-200o200o2-7EBKDVm9dFkh9szkNTfyTA.png"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 41169,
+                  "name": "Session Format",
+                  "categoryItems": [],
+                  "sort": 0
+                },
+                {
+                  "id": 41170,
+                  "name": "Technology",
+                  "categoryItems": [
+                    {
+                      "id": 130788,
+                      "name": "Google Cloud Platform"
+                    },
+                    {
+                      "id": 130789,
+                      "name": "Cloud"
+                    },
+                    {
+                      "id": 130791,
+                      "name": "Machine Learning"
+                    },
+                    {
+                      "id": 130800,
+                      "name": "Data Science"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 41171,
+                  "name": "Audience level",
+                  "categoryItems": [
+                    {
+                      "id": 130801,
+                      "name": "Beginner"
+                    }
+                  ],
+                  "sort": 2
+                }
+              ],
               "roomId": 27325,
               "room": "Megh 1",
               "liveUrl": null,
