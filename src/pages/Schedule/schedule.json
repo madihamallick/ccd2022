@@ -11,7 +11,7 @@
             "id": "8874e0e4-acc0-4625-8e23-bd91f53ea387",
             "title": "Entry and Registration",
             "description": null,
-            "startsAt": "2022-08-27T10:00:00",
+            "startsAt": "2022-08-27T09:30:00",
             "endsAt": "2022-08-27T10:15:00",
             "isServiceSession": true,
             "isPlenumSession": true,
@@ -42,7 +42,7 @@
             "title": "High Performance Computing in Cloud using oneAPI",
             "description": "I would be doing a hands-on lab with Devcloud with a focus on oneMKL(oneAPI Math Kernel Library), Open MP offload basics for HPC,Adding Google's JAX library for higher order maths calculation using Google Colab\r\n",
             "startsAt": "2022-08-27T10:45:00",
-            "endsAt": "2022-08-27T11:45:00",
+            "endsAt": "2022-08-27T11:30:00",
             "isServiceSession": false,
             "isPlenumSession": true,
             "speakers": [
@@ -96,11 +96,123 @@
             "recordingUrl": null
           },
           {
+            "id": "371758",
+            "title": "Movie Recommender System using NLP",
+            "description": "We all love binge-watching, but how do those OTT platforms suggest similar movies? Are they reading my mind?\r\n\r\nIn this session, we will go in-depth into Natural Language Processing and then we will learn how these recommendations actually work. We will also develop a recommendation engine from our own data.",
+            "startsAt": "2022-08-27T11:30:00",
+            "endsAt": "2022-08-27T12:15:00",
+            "isServiceSession": false,
+            "isPlenumSession": true,
+            "speakers": [
+              {
+                "id": "e64074fa-5901-4daf-afd5-a66b88a9dda8",
+                "name": "Sandip Palit"
+              }
+            ],
+            "categories": [
+              {
+                "id": 41169,
+                "name": "Session Format",
+                "categoryItems": [
+                  {
+                    "id": 130786,
+                    "name": "Session"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 41170,
+                "name": "Technology",
+                "categoryItems": [
+                  {
+                    "id": 130800,
+                    "name": "Data Science"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 41171,
+                "name": "Audience level",
+                "categoryItems": [
+                  {
+                    "id": 130801,
+                    "name": "Beginner"
+                  }
+                ],
+                "sort": 2
+              }
+            ],
+            "roomId": 27325,
+            "room": "Megh 1",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
+            "id": "373531",
+            "title": "Transformers Assemble",
+            "description": "A session on Robotics and Automation, applications, future, boon, or curse.",
+            "startsAt": "2022-08-27T12:15:00",
+            "endsAt": "2022-08-27T12:45:00",
+            "isServiceSession": false,
+            "isPlenumSession": true,
+            "speakers": [
+              {
+                "id": "7971e336-1503-43c7-8daa-79b06c1c5be9",
+                "name": "Dikshita Desai"
+              }
+            ],
+            "categories": [
+              {
+                "id": 41169,
+                "name": "Session Format",
+                "categoryItems": [
+                  {
+                    "id": 130785,
+                    "name": "Lightning Talk"
+                  }
+                ],
+                "sort": 0
+              },
+              {
+                "id": 41170,
+                "name": "Technology",
+                "categoryItems": [
+                  {
+                    "id": 130789,
+                    "name": "Cloud"
+                  },
+                  {
+                    "id": 130791,
+                    "name": "Machine Learning"
+                  }
+                ],
+                "sort": 1
+              },
+              {
+                "id": 41171,
+                "name": "Audience level",
+                "categoryItems": [
+                  {
+                    "id": 130803,
+                    "name": "Intermediate"
+                  }
+                ],
+                "sort": 2
+              }
+            ],
+            "roomId": 27325,
+            "room": "Megh 1",
+            "liveUrl": null,
+            "recordingUrl": null
+          },
+          {
             "id": "369102",
             "title": "Customer Data Platform on Google Cloud for Retailers",
             "description": "A unified customer experience is impossible without unified customer data. \r\nKnow how Google Cloud helps Retailers harness their First-Party Data to create a single view of customer by harnessing the power of ML and integration between Google Cloud, Google Marketing Platform & other MarTech technologies to drive personalised experience in a privacy-first approach.",
-            "startsAt": "2022-08-27T11:45:00",
-            "endsAt": "2022-08-27T12:30:00",
+            "startsAt": "2022-08-27T12:45:00",
+            "endsAt": "2022-08-27T13:30:00",
             "isServiceSession": false,
             "isPlenumSession": true,
             "speakers": [
@@ -147,60 +259,6 @@
                   {
                     "id": 130803,
                     "name": "Intermediate"
-                  }
-                ],
-                "sort": 2
-              }
-            ],
-            "roomId": 27325,
-            "room": "Megh 1",
-            "liveUrl": null,
-            "recordingUrl": null
-          },
-          {
-            "id": "371758",
-            "title": "Movie Recommender System using NLP",
-            "description": "We all love binge-watching, but how do those OTT platforms suggest similar movies? Are they reading my mind?\r\n\r\nIn this session, we will go in-depth into Natural Language Processing and then we will learn how these recommendations actually work. We will also develop a recommendation engine from our own data.",
-            "startsAt": "2022-08-27T12:30:00",
-            "endsAt": "2022-08-27T13:30:00",
-            "isServiceSession": false,
-            "isPlenumSession": true,
-            "speakers": [
-              {
-                "id": "e64074fa-5901-4daf-afd5-a66b88a9dda8",
-                "name": "Sandip Palit"
-              }
-            ],
-            "categories": [
-              {
-                "id": 41169,
-                "name": "Session Format",
-                "categoryItems": [
-                  {
-                    "id": 130786,
-                    "name": "Session"
-                  }
-                ],
-                "sort": 0
-              },
-              {
-                "id": 41170,
-                "name": "Technology",
-                "categoryItems": [
-                  {
-                    "id": 130800,
-                    "name": "Data Science"
-                  }
-                ],
-                "sort": 1
-              },
-              {
-                "id": 41171,
-                "name": "Audience level",
-                "categoryItems": [
-                  {
-                    "id": 130801,
-                    "name": "Beginner"
                   }
                 ],
                 "sort": 2
@@ -382,7 +440,7 @@
     ],
     "timeSlots": [
       {
-        "slotStart": "10:00:00",
+        "slotStart": "09:30:00",
         "rooms": [
           {
             "id": 27325,
@@ -391,7 +449,7 @@
               "id": "8874e0e4-acc0-4625-8e23-bd91f53ea387",
               "title": "Entry and Registration",
               "description": null,
-              "startsAt": "2022-08-27T10:00:00",
+              "startsAt": "2022-08-27T09:30:00",
               "endsAt": "2022-08-27T10:15:00",
               "isServiceSession": true,
               "isPlenumSession": true,
@@ -442,7 +500,7 @@
               "title": "High Performance Computing in Cloud using oneAPI",
               "description": "I would be doing a hands-on lab with Devcloud with a focus on oneMKL(oneAPI Math Kernel Library), Open MP offload basics for HPC,Adding Google's JAX library for higher order maths calculation using Google Colab\r\n",
               "startsAt": "2022-08-27T10:45:00",
-              "endsAt": "2022-08-27T11:45:00",
+              "endsAt": "2022-08-27T11:30:00",
               "isServiceSession": false,
               "isPlenumSession": true,
               "speakers": [
@@ -501,7 +559,141 @@
         ]
       },
       {
-        "slotStart": "11:45:00",
+        "slotStart": "11:30:00",
+        "rooms": [
+          {
+            "id": 27325,
+            "name": "Megh 1",
+            "session": {
+              "id": "371758",
+              "title": "Movie Recommender System using NLP",
+              "description": "We all love binge-watching, but how do those OTT platforms suggest similar movies? Are they reading my mind?\r\n\r\nIn this session, we will go in-depth into Natural Language Processing and then we will learn how these recommendations actually work. We will also develop a recommendation engine from our own data.",
+              "startsAt": "2022-08-27T11:30:00",
+              "endsAt": "2022-08-27T12:15:00",
+              "isServiceSession": false,
+              "isPlenumSession": true,
+              "speakers": [
+                {
+                  "id": "e64074fa-5901-4daf-afd5-a66b88a9dda8",
+                  "name": "Sandip Palit",
+                  "profilePicture": "https://sessionize.com/image/96c4-400o400o2-bWpZz3Btap96ij9UVreBM.jpg"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 41169,
+                  "name": "Session Format",
+                  "categoryItems": [
+                    {
+                      "id": 130786,
+                      "name": "Session"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 41170,
+                  "name": "Technology",
+                  "categoryItems": [
+                    {
+                      "id": 130800,
+                      "name": "Data Science"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 41171,
+                  "name": "Audience level",
+                  "categoryItems": [
+                    {
+                      "id": 130801,
+                      "name": "Beginner"
+                    }
+                  ],
+                  "sort": 2
+                }
+              ],
+              "roomId": 27325,
+              "room": "Megh 1",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "12:15:00",
+        "rooms": [
+          {
+            "id": 27325,
+            "name": "Megh 1",
+            "session": {
+              "id": "373531",
+              "title": "Transformers Assemble",
+              "description": "A session on Robotics and Automation, applications, future, boon, or curse.",
+              "startsAt": "2022-08-27T12:15:00",
+              "endsAt": "2022-08-27T12:45:00",
+              "isServiceSession": false,
+              "isPlenumSession": true,
+              "speakers": [
+                {
+                  "id": "7971e336-1503-43c7-8daa-79b06c1c5be9",
+                  "name": "Dikshita Desai",
+                  "profilePicture": "https://sessionize.com/image/2000-400o400o2-RamYUp8A3xwFZkUtqBBeob.PNG"
+                }
+              ],
+              "categories": [
+                {
+                  "id": 41169,
+                  "name": "Session Format",
+                  "categoryItems": [
+                    {
+                      "id": 130785,
+                      "name": "Lightning Talk"
+                    }
+                  ],
+                  "sort": 0
+                },
+                {
+                  "id": 41170,
+                  "name": "Technology",
+                  "categoryItems": [
+                    {
+                      "id": 130789,
+                      "name": "Cloud"
+                    },
+                    {
+                      "id": 130791,
+                      "name": "Machine Learning"
+                    }
+                  ],
+                  "sort": 1
+                },
+                {
+                  "id": 41171,
+                  "name": "Audience level",
+                  "categoryItems": [
+                    {
+                      "id": 130803,
+                      "name": "Intermediate"
+                    }
+                  ],
+                  "sort": 2
+                }
+              ],
+              "roomId": 27325,
+              "room": "Megh 1",
+              "liveUrl": null,
+              "recordingUrl": null
+            },
+            "index": 0
+          }
+        ]
+      },
+      {
+        "slotStart": "12:45:00",
         "rooms": [
           {
             "id": 27325,
@@ -510,8 +702,8 @@
               "id": "369102",
               "title": "Customer Data Platform on Google Cloud for Retailers",
               "description": "A unified customer experience is impossible without unified customer data. \r\nKnow how Google Cloud helps Retailers harness their First-Party Data to create a single view of customer by harnessing the power of ML and integration between Google Cloud, Google Marketing Platform & other MarTech technologies to drive personalised experience in a privacy-first approach.",
-              "startsAt": "2022-08-27T11:45:00",
-              "endsAt": "2022-08-27T12:30:00",
+              "startsAt": "2022-08-27T12:45:00",
+              "endsAt": "2022-08-27T13:30:00",
               "isServiceSession": false,
               "isPlenumSession": true,
               "speakers": [
@@ -559,71 +751,6 @@
                     {
                       "id": 130803,
                       "name": "Intermediate"
-                    }
-                  ],
-                  "sort": 2
-                }
-              ],
-              "roomId": 27325,
-              "room": "Megh 1",
-              "liveUrl": null,
-              "recordingUrl": null
-            },
-            "index": 0
-          }
-        ]
-      },
-      {
-        "slotStart": "12:30:00",
-        "rooms": [
-          {
-            "id": 27325,
-            "name": "Megh 1",
-            "session": {
-              "id": "371758",
-              "title": "Movie Recommender System using NLP",
-              "description": "We all love binge-watching, but how do those OTT platforms suggest similar movies? Are they reading my mind?\r\n\r\nIn this session, we will go in-depth into Natural Language Processing and then we will learn how these recommendations actually work. We will also develop a recommendation engine from our own data.",
-              "startsAt": "2022-08-27T12:30:00",
-              "endsAt": "2022-08-27T13:30:00",
-              "isServiceSession": false,
-              "isPlenumSession": true,
-              "speakers": [
-                {
-                  "id": "e64074fa-5901-4daf-afd5-a66b88a9dda8",
-                  "name": "Sandip Palit",
-                  "profilePicture": "https://sessionize.com/image/96c4-400o400o2-bWpZz3Btap96ij9UVreBM.jpg"
-                }
-              ],
-              "categories": [
-                {
-                  "id": 41169,
-                  "name": "Session Format",
-                  "categoryItems": [
-                    {
-                      "id": 130786,
-                      "name": "Session"
-                    }
-                  ],
-                  "sort": 0
-                },
-                {
-                  "id": 41170,
-                  "name": "Technology",
-                  "categoryItems": [
-                    {
-                      "id": 130800,
-                      "name": "Data Science"
-                    }
-                  ],
-                  "sort": 1
-                },
-                {
-                  "id": 41171,
-                  "name": "Audience level",
-                  "categoryItems": [
-                    {
-                      "id": 130801,
-                      "name": "Beginner"
                     }
                   ],
                   "sort": 2
@@ -891,8 +1018,7 @@
             "speakers": [
               {
                 "id": "65ca5e93-1838-4b0a-b555-71c1fc3c33e0",
-                "name": "Abirami Sukumaran",
-                "profilePicture": "https://sessionize.com/image/930c-200o200o2-7EBKDVm9dFkh9szkNTfyTA.png"
+                "name": "Abirami Sukumaran"
               }
             ],
             "categories": [
@@ -946,8 +1072,8 @@
             "id": "716c039b-5521-4e9f-8429-484e1d75d94f",
             "title": "Tea Break",
             "description": null,
-            "startsAt": "2022-08-28T09:45:00",
-            "endsAt": "2022-08-28T10:05:00",
+            "startsAt": "2022-08-28T09:55:00",
+            "endsAt": "2022-08-28T10:15:00",
             "isServiceSession": true,
             "isPlenumSession": true,
             "speakers": [],
@@ -961,8 +1087,8 @@
             "id": "369160",
             "title": "AI/ML Workloads Need Extra Security",
             "description": "The need for security is pervading all modern day systems. But given the growth in cloud machine-learning computing, which deals with extremely valuable data, and companies need to be paying particular attention to handling that data securely. The operation and maintenance of large scale production machine learning systems has uncovered new challenges which have required fundamentally different approaches to that of traditional software. The area of security in MLOps has seen a rise in attention as machine learning infrastructure expands to further critical use cases across industry. In this talk, we will discuss the key security challenges that arise in production machine learning systems, best practices and frameworks that can be adopted to help mitigate security risks in ML models, ML pipelines and ML services reinforcing SecOps into MLOps.",
-            "startsAt": "2022-08-28T10:05:00",
-            "endsAt": "2022-08-28T10:45:00",
+            "startsAt": "2022-08-28T10:15:00",
+            "endsAt": "2022-08-28T10:55:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1035,8 +1161,8 @@
             "id": "367523",
             "title": "Role of Google Cloud in Digital Transformations in an Ethical manner",
             "description": "The session will highlight how to approach building AI/ML solutions to solve business problems, using Open source tools, platforms, and frameworks.\r\n It will also entail different tools and best practices including Ethics, Sustainability that could aid the development process of different stages in the AI transformation journey. In addition, it will also discuss strategies and actions for organizations \r\nto be compliant with standards, laws, and practices enabling them to experience smoother transition, with the best utilization of resources.\r\n",
-            "startsAt": "2022-08-28T10:45:00",
-            "endsAt": "2022-08-28T11:25:00",
+            "startsAt": "2022-08-28T10:55:00",
+            "endsAt": "2022-08-28T11:35:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1097,8 +1223,8 @@
             "id": "371440",
             "title": "Scaling Websockets for IoT Devices using Google Cloud Platform",
             "description": "Scalability issues of Websockets and its probable solution using GCP as service for IoT devices",
-            "startsAt": "2022-08-28T11:25:00",
-            "endsAt": "2022-08-28T12:05:00",
+            "startsAt": "2022-08-28T11:35:00",
+            "endsAt": "2022-08-28T12:15:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1155,8 +1281,8 @@
             "id": "371517",
             "title": "UI / UX Personalization using Firebase Remote Config",
             "description": "This talk intends to dive deep into the concept of the Personalization of User Experience and User Interface and how it can be achieved using a service called 'Remote Config' by Firebase. This talk is suitable even for audience with little or no idea about UI/UX personalization as we'd start from the very basics. This talk also covers a service of Firebase called 'Remote Config', and for that a basic understanding of what Firebase is and how to setup firebase is required. A couple of end-to-end working demos of personalizartion using remote config would also be included in form of videos, as coding live during the event wouldn't be possible.",
-            "startsAt": "2022-08-28T12:05:00",
-            "endsAt": "2022-08-28T12:45:00",
+            "startsAt": "2022-08-28T12:15:00",
+            "endsAt": "2022-08-28T12:55:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1221,7 +1347,7 @@
             "id": "9d4f0710-f0ad-4da9-a56e-9e16c971bfaf",
             "title": "Lunch",
             "description": null,
-            "startsAt": "2022-08-28T12:45:00",
+            "startsAt": "2022-08-28T12:55:00",
             "endsAt": "2022-08-28T13:45:00",
             "isServiceSession": true,
             "isPlenumSession": true,
@@ -1473,8 +1599,8 @@
             "id": "365573",
             "title": "With Cloud Native never build your application, just Continuously Integrate",
             "description": "Over the past few years, lots of organizations have started to adopt Cloud Native architectures. Despite the adoption of Cloud Native architectures many companies haven’t achieved optimal results. Wondering why? One of  the reasons is our adherence to traditional ways of building and deploying applications.\r\n\r\nKubernetes has become the de facto Cloud Native deployment platform. It offers radically easy scaling and fault tolerance. Despite this, not many CI systems utilize the benefits of kubernetes. None of the existing build system offers the capabilities that are native to Kubernetes like in-cluster building, defining the build resources using CRDs, leveraging underlying security and access control etc., These missing features of Kubernetes made the Cloud Native architectures to be less effective and more complex.\r\n\r\nIn this session we will explore an Open Source project Drone --  a cloud native self-service Continuous Integration platform -- . Though 10 years old, Drone offers a mature, Kubernetes based CI system harnessing the scaling and fault tolerance characteristics of Cloud Native architectures. The session will also explore the characteristics of Drone; Simplicity, Cloud Native, Decoupled and Declarative with a demo that will show how to define drone pipelines to do a self-service continuous integration, facilitating quicker builds and faster deployments to cloud native platforms like Kubernetes.\r\n",
-            "startsAt": "2022-08-28T10:05:00",
-            "endsAt": "2022-08-28T10:45:00",
+            "startsAt": "2022-08-28T10:15:00",
+            "endsAt": "2022-08-28T10:55:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1535,8 +1661,8 @@
             "id": "366465",
             "title": "Container Security for Enterprise Kubernetes environments",
             "description": "Getting into the ways of securing multiple Kubernetes environments running in production deployments also securing GCR Containers and developing effective pipelines to make environments secure with tools like Cloud Build, Cloud Run, Binary Authorization, Trivy, ThreatMapper and more.",
-            "startsAt": "2022-08-28T10:45:00",
-            "endsAt": "2022-08-28T11:25:00",
+            "startsAt": "2022-08-28T10:55:00",
+            "endsAt": "2022-08-28T11:35:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1593,8 +1719,8 @@
             "id": "371786",
             "title": "Your business never sleeps, you do, Stay Alert with Cloud Monitoring",
             "description": "Monitoring  services and applications to detect and mitigate errors in the right time is as important as delivering the next “coolest” application. While we are often excited about the solutions that can solve world’s biggest problems, maintaining those applications once they are out there serving the customers remains ignored and becomes a bottleneck in growth.\r\nIn this session we will be talking about the importance of monitoring applications in production that are serving the customer traffic and how tools can be used to log errors and record metrics that are critical to troubleshoot any big issue. We will also go through the tools provided by Google Cloud Operations, viz., Cloud Logging, Cloud Monitoring and Error Reporting and the ways in which these can be leveraged to monitor your own services to save yourself from being the next big news of Is it Down?",
-            "startsAt": "2022-08-28T11:25:00",
-            "endsAt": "2022-08-28T12:05:00",
+            "startsAt": "2022-08-28T11:35:00",
+            "endsAt": "2022-08-28T12:15:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1651,8 +1777,8 @@
             "id": "366337",
             "title": "Future of SPA deployment using SPAship (Integration with Openshift & GCP)",
             "description": "I'll be talking about our Opensource CD tool SPAship which we're developing at Redat. SPAship basically makes your SPA (Single Page Application) deployment faster, using SPAship you can easily deploy your SPA in less than 3 sec, and we can easily configure it in any of the cloud platform (eg. GCP, Openshift) & this is a highly scalable  I'll also provide a short demo using of SPAship on Openshift & GCP.",
-            "startsAt": "2022-08-28T12:05:00",
-            "endsAt": "2022-08-28T12:45:00",
+            "startsAt": "2022-08-28T12:15:00",
+            "endsAt": "2022-08-28T12:55:00",
             "isServiceSession": false,
             "isPlenumSession": false,
             "speakers": [
@@ -1873,7 +1999,7 @@
                 {
                   "id": "65ca5e93-1838-4b0a-b555-71c1fc3c33e0",
                   "name": "Abirami Sukumaran",
-                  "profilePicture": "https://sessionize.com/image/930c-200o200o2-7EBKDVm9dFkh9szkNTfyTA.png"
+                  "profilePicture": "https://sessionize.com/image/dd75-400o400o2-7EBKDVm9dFkh9szkNTfyTA.png"
                 }
               ],
               "categories": [
@@ -1928,7 +2054,7 @@
         ]
       },
       {
-        "slotStart": "09:45:00",
+        "slotStart": "09:55:00",
         "rooms": [
           {
             "id": 27325,
@@ -1937,8 +2063,8 @@
               "id": "716c039b-5521-4e9f-8429-484e1d75d94f",
               "title": "Tea Break",
               "description": null,
-              "startsAt": "2022-08-28T09:45:00",
-              "endsAt": "2022-08-28T10:05:00",
+              "startsAt": "2022-08-28T09:55:00",
+              "endsAt": "2022-08-28T10:15:00",
               "isServiceSession": true,
               "isPlenumSession": true,
               "speakers": [],
@@ -1953,7 +2079,7 @@
         ]
       },
       {
-        "slotStart": "10:05:00",
+        "slotStart": "10:15:00",
         "rooms": [
           {
             "id": 27325,
@@ -1962,8 +2088,8 @@
               "id": "369160",
               "title": "AI/ML Workloads Need Extra Security",
               "description": "The need for security is pervading all modern day systems. But given the growth in cloud machine-learning computing, which deals with extremely valuable data, and companies need to be paying particular attention to handling that data securely. The operation and maintenance of large scale production machine learning systems has uncovered new challenges which have required fundamentally different approaches to that of traditional software. The area of security in MLOps has seen a rise in attention as machine learning infrastructure expands to further critical use cases across industry. In this talk, we will discuss the key security challenges that arise in production machine learning systems, best practices and frameworks that can be adopted to help mitigate security risks in ML models, ML pipelines and ML services reinforcing SecOps into MLOps.",
-              "startsAt": "2022-08-28T10:05:00",
-              "endsAt": "2022-08-28T10:45:00",
+              "startsAt": "2022-08-28T10:15:00",
+              "endsAt": "2022-08-28T10:55:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2042,8 +2168,8 @@
               "id": "365573",
               "title": "With Cloud Native never build your application, just Continuously Integrate",
               "description": "Over the past few years, lots of organizations have started to adopt Cloud Native architectures. Despite the adoption of Cloud Native architectures many companies haven’t achieved optimal results. Wondering why? One of  the reasons is our adherence to traditional ways of building and deploying applications.\r\n\r\nKubernetes has become the de facto Cloud Native deployment platform. It offers radically easy scaling and fault tolerance. Despite this, not many CI systems utilize the benefits of kubernetes. None of the existing build system offers the capabilities that are native to Kubernetes like in-cluster building, defining the build resources using CRDs, leveraging underlying security and access control etc., These missing features of Kubernetes made the Cloud Native architectures to be less effective and more complex.\r\n\r\nIn this session we will explore an Open Source project Drone --  a cloud native self-service Continuous Integration platform -- . Though 10 years old, Drone offers a mature, Kubernetes based CI system harnessing the scaling and fault tolerance characteristics of Cloud Native architectures. The session will also explore the characteristics of Drone; Simplicity, Cloud Native, Decoupled and Declarative with a demo that will show how to define drone pipelines to do a self-service continuous integration, facilitating quicker builds and faster deployments to cloud native platforms like Kubernetes.\r\n",
-              "startsAt": "2022-08-28T10:05:00",
-              "endsAt": "2022-08-28T10:45:00",
+              "startsAt": "2022-08-28T10:15:00",
+              "endsAt": "2022-08-28T10:55:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2106,7 +2232,7 @@
         ]
       },
       {
-        "slotStart": "10:45:00",
+        "slotStart": "10:55:00",
         "rooms": [
           {
             "id": 27325,
@@ -2115,8 +2241,8 @@
               "id": "367523",
               "title": "Role of Google Cloud in Digital Transformations in an Ethical manner",
               "description": "The session will highlight how to approach building AI/ML solutions to solve business problems, using Open source tools, platforms, and frameworks.\r\n It will also entail different tools and best practices including Ethics, Sustainability that could aid the development process of different stages in the AI transformation journey. In addition, it will also discuss strategies and actions for organizations \r\nto be compliant with standards, laws, and practices enabling them to experience smoother transition, with the best utilization of resources.\r\n",
-              "startsAt": "2022-08-28T10:45:00",
-              "endsAt": "2022-08-28T11:25:00",
+              "startsAt": "2022-08-28T10:55:00",
+              "endsAt": "2022-08-28T11:35:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2183,8 +2309,8 @@
               "id": "366465",
               "title": "Container Security for Enterprise Kubernetes environments",
               "description": "Getting into the ways of securing multiple Kubernetes environments running in production deployments also securing GCR Containers and developing effective pipelines to make environments secure with tools like Cloud Build, Cloud Run, Binary Authorization, Trivy, ThreatMapper and more.",
-              "startsAt": "2022-08-28T10:45:00",
-              "endsAt": "2022-08-28T11:25:00",
+              "startsAt": "2022-08-28T10:55:00",
+              "endsAt": "2022-08-28T11:35:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2243,7 +2369,7 @@
         ]
       },
       {
-        "slotStart": "11:25:00",
+        "slotStart": "11:35:00",
         "rooms": [
           {
             "id": 27325,
@@ -2252,8 +2378,8 @@
               "id": "371440",
               "title": "Scaling Websockets for IoT Devices using Google Cloud Platform",
               "description": "Scalability issues of Websockets and its probable solution using GCP as service for IoT devices",
-              "startsAt": "2022-08-28T11:25:00",
-              "endsAt": "2022-08-28T12:05:00",
+              "startsAt": "2022-08-28T11:35:00",
+              "endsAt": "2022-08-28T12:15:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2317,8 +2443,8 @@
               "id": "371786",
               "title": "Your business never sleeps, you do, Stay Alert with Cloud Monitoring",
               "description": "Monitoring  services and applications to detect and mitigate errors in the right time is as important as delivering the next “coolest” application. While we are often excited about the solutions that can solve world’s biggest problems, maintaining those applications once they are out there serving the customers remains ignored and becomes a bottleneck in growth.\r\nIn this session we will be talking about the importance of monitoring applications in production that are serving the customer traffic and how tools can be used to log errors and record metrics that are critical to troubleshoot any big issue. We will also go through the tools provided by Google Cloud Operations, viz., Cloud Logging, Cloud Monitoring and Error Reporting and the ways in which these can be leveraged to monitor your own services to save yourself from being the next big news of Is it Down?",
-              "startsAt": "2022-08-28T11:25:00",
-              "endsAt": "2022-08-28T12:05:00",
+              "startsAt": "2022-08-28T11:35:00",
+              "endsAt": "2022-08-28T12:15:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2377,7 +2503,7 @@
         ]
       },
       {
-        "slotStart": "12:05:00",
+        "slotStart": "12:15:00",
         "rooms": [
           {
             "id": 27325,
@@ -2386,8 +2512,8 @@
               "id": "371517",
               "title": "UI / UX Personalization using Firebase Remote Config",
               "description": "This talk intends to dive deep into the concept of the Personalization of User Experience and User Interface and how it can be achieved using a service called 'Remote Config' by Firebase. This talk is suitable even for audience with little or no idea about UI/UX personalization as we'd start from the very basics. This talk also covers a service of Firebase called 'Remote Config', and for that a basic understanding of what Firebase is and how to setup firebase is required. A couple of end-to-end working demos of personalizartion using remote config would also be included in form of videos, as coding live during the event wouldn't be possible.",
-              "startsAt": "2022-08-28T12:05:00",
-              "endsAt": "2022-08-28T12:45:00",
+              "startsAt": "2022-08-28T12:15:00",
+              "endsAt": "2022-08-28T12:55:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2458,8 +2584,8 @@
               "id": "366337",
               "title": "Future of SPA deployment using SPAship (Integration with Openshift & GCP)",
               "description": "I'll be talking about our Opensource CD tool SPAship which we're developing at Redat. SPAship basically makes your SPA (Single Page Application) deployment faster, using SPAship you can easily deploy your SPA in less than 3 sec, and we can easily configure it in any of the cloud platform (eg. GCP, Openshift) & this is a highly scalable  I'll also provide a short demo using of SPAship on Openshift & GCP.",
-              "startsAt": "2022-08-28T12:05:00",
-              "endsAt": "2022-08-28T12:45:00",
+              "startsAt": "2022-08-28T12:15:00",
+              "endsAt": "2022-08-28T12:55:00",
               "isServiceSession": false,
               "isPlenumSession": false,
               "speakers": [
@@ -2522,7 +2648,7 @@
         ]
       },
       {
-        "slotStart": "12:45:00",
+        "slotStart": "12:55:00",
         "rooms": [
           {
             "id": 27325,
@@ -2531,7 +2657,7 @@
               "id": "9d4f0710-f0ad-4da9-a56e-9e16c971bfaf",
               "title": "Lunch",
               "description": null,
-              "startsAt": "2022-08-28T12:45:00",
+              "startsAt": "2022-08-28T12:55:00",
               "endsAt": "2022-08-28T13:45:00",
               "isServiceSession": true,
               "isPlenumSession": true,
