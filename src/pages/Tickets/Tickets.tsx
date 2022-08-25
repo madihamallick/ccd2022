@@ -89,10 +89,6 @@ const Tickets = () => {
         Congratulations on making it through hundreds of applications! <br />
         We look forward to see you at the Cloud Community Days.
       </p>
-      <p className="mb-8 lg:mb-16 font-light text-center text-red-600 sm:text-xl">
-        Workshop passes will start rolling out from 5 August. <br />
-        Check here after 5 August for your Workshop pass.
-      </p>
       <div className="flex flex-col lg:flex-row my-0 lg:justify-center items-center ">
         {conferencePassTicket || workshopPassTicket ? (
           <>
